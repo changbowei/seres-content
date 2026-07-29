@@ -1,0 +1,11 @@
+# Local editor and operating-system files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Newly generated simulation runs are local until intentionally published.
+# Existing published files remain tracked.
+simulations/*/events.jsonl
+simulations/*/snapshot.json
+simulations/*/provenance.json
