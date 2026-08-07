@@ -1,0 +1,52 @@
+id: bom_ebf3_high_voltage_tank
+owner_item_id: ebf3_high_voltage_tank
+components:
+  - item_id: ebf3_hv_tank_enclosure
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_transformer_insulating_fluid
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_section_module_set
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_internal_hv_leads_terminals
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_transformer_insulation_spacers
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_tank_side_hv_output_bushing
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_cable_to_gun
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_discharge_bleeder_resistor_chain
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_output_voltage_divider_sensing
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_output_return_current_monitor
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_fill_drain_ports
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_grounding_terminal
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_temperature_sensor
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_pressure_relief
+    qty: 1.0
+    unit: unit
+notes: >
+  High voltage tank leaf items mapped from the high-voltage tank source table
+  and source-tag cleanup in
+  research/ebf3_bom_sources/organized/high_voltage_tank_level_2_audit.md.
+  Core internals use the concise section-module-set model from
+  research/ebf3_bom_sources/organized/hv_tank_core_decomposition_plan.md; no
+  leaf recipes yet to preserve fidelity.

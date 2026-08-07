@@ -1,0 +1,10 @@
+id: spinel_ore
+kind: raw_material
+name: Spinel ore (MgAl2O4)
+mass: 1.0
+unit: kg
+notes: Spinel-rich mineral concentrate for refractory and optical applications.
+recipe: recipe_spinel_ore_v0
+unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

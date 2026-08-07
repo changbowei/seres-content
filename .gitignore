@@ -9,3 +9,4 @@
 simulations/*/events.jsonl
 simulations/*/snapshot.json
 simulations/*/provenance.json
+simulations/*/deferred_intents.json

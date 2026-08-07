@@ -1,0 +1,35 @@
+id: recipe_ebf3_cabin_lighting_port_frame
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_cabin_lighting_port_frame
+inputs:
+- item_id: steel_plate_or_sheet
+  qty: 31.5
+  unit: kg
+outputs:
+- item_id: ebf3_cabin_lighting_port_frame
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: cutting_basic_v0
+  inputs:
+  - item_id: steel_plate_or_sheet
+    qty: 31.5
+    unit: kg
+  outputs:
+  - item_id: cut_parts
+    qty: 30.51
+    unit: kg
+  notes: Rough-cut the passive steel port frame.
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: cut_parts
+    qty: 30.51
+    unit: kg
+  outputs:
+  - item_id: ebf3_cabin_lighting_port_frame
+    qty: 1.0
+    unit: unit
+  notes: Machine the opening, mounting interfaces, and sealing face.
+notes: First-pass local route for the passive frame leaf. Optics, seals, alignment, and assembled-port
+  leak acceptance remain parent-level.

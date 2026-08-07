@@ -1,0 +1,18 @@
+id: data_encoding_manchester_v0
+kind: resource
+name: Manchester encoding
+mass: 0.01
+unit: unit
+notes: 'Seed placeholder for Manchester encoding data transformation. Represents a
+  data-encoding
+
+  step referenced in seed reviews but not yet modeled as a full process/recipe in
+  the KB.
+
+  '
+source_tags:
+- seed_paper_dec2024
+recipe: recipe_data_encoding_manchester_v0
+unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

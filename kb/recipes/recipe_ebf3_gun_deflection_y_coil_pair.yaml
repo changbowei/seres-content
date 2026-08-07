@@ -1,0 +1,35 @@
+id: recipe_ebf3_gun_deflection_y_coil_pair
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_gun_deflection_y_coil_pair
+inputs:
+- item_id: copper_wire_magnet
+  qty: 0.55
+  unit: kg
+- item_id: coil_insulation_material
+  qty: 0.05
+  unit: kg
+outputs:
+- item_id: ebf3_gun_deflection_y_coil_pair
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: coil_winding_basic_v0
+  inputs:
+  - item_id: copper_wire_magnet
+    qty: 0.55
+    unit: kg
+  - item_id: coil_insulation_material
+    qty: 0.05
+    unit: kg
+  outputs:
+  - item_id: ebf3_gun_deflection_y_coil_pair
+    qty: 1.0
+    unit: unit
+  notes: >
+    First-pass local flagged route using coil winding equipment. Vacuum insulation,
+    heat rejection, conductor source/import-recycle basis, field mapping, symmetry,
+    and beam steering acceptance remain sensitivity flags.
+notes: >
+  EBF3 route-review recipe for a local-flagged deflection coil pair. This records
+  the selected process route without claiming magnetic or vacuum acceptance closure.

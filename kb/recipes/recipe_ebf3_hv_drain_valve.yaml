@@ -1,0 +1,41 @@
+id: recipe_ebf3_hv_drain_valve
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_hv_drain_valve
+inputs:
+- item_id: steel_bar_raw
+  qty: 0.21
+  unit: kg
+- item_id: seal_material
+  qty: 0.01
+  unit: kg
+outputs:
+- item_id: ebf3_hv_drain_valve
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: steel_bar_raw
+    qty: 0.21
+    unit: kg
+  outputs:
+  - item_id: rough_part
+    qty: 0.19
+    unit: kg
+  notes: Machine valve body, stem, and seat geometry.
+- process_id: assembly_basic_v0
+  inputs:
+  - item_id: rough_part
+    qty: 0.19
+    unit: kg
+  - item_id: seal_material
+    qty: 0.01
+    unit: kg
+  outputs:
+  - item_id: ebf3_hv_drain_valve
+    qty: 1.0
+    unit: unit
+  notes: Install the selected oil-compatible seal and assemble the valve.
+notes: First-pass local valve fabrication with explicit imported seal stock. Oil compatibility, pressure
+  retention, and leak acceptance remain flagged.

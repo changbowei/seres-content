@@ -1,0 +1,49 @@
+id: recipe_ebf3_ripple_inductor_winding
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_ripple_inductor_winding
+inputs:
+- item_id: aluminum_wire
+  qty: 0.4725
+  unit: kg
+- item_id: coil_insulation_material
+  qty: 0.02
+  unit: kg
+outputs:
+- item_id: ebf3_ripple_inductor_winding
+  qty: 1.0
+  unit: unit
+byproducts:
+- item_id: metal_scrap
+  qty: 0.02
+  unit: kg
+steps:
+- process_id: wire_drawing_basic_v0
+  inputs:
+  - item_id: aluminum_wire
+    qty: 0.4725
+    unit: kg
+  outputs:
+  - item_id: metal_wire_feed
+    qty: 0.45
+    unit: kg
+  notes: Draw the conductor to the selected winding gauge.
+- process_id: coil_winding_basic_v0
+  inputs:
+  - item_id: metal_wire_feed
+    qty: 0.45
+    unit: kg
+  - item_id: coil_insulation_material
+    qty: 0.02
+    unit: kg
+  outputs:
+  - item_id: ebf3_ripple_inductor_winding
+    qty: 1.0
+    unit: unit
+  byproducts:
+  - item_id: metal_scrap
+    qty: 0.02
+    unit: kg
+  notes: Wind with controlled turns, spacing, and layer insulation.
+notes: First-pass local winding route. Turns, spacing, inductance, dielectric margin, and thermal performance
+  remain tunable checks.

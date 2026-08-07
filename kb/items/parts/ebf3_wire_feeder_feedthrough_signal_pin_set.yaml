@@ -1,0 +1,54 @@
+id: ebf3_wire_feeder_feedthrough_signal_pin_set
+kind: assembly_part
+name: EBF3 wire feeder feedthrough signal pin set
+mass: 0.04
+unit: unit
+unit_kind: discrete
+material: kovar_or_copper_alloy
+notes: 'Child of ebf3_wire_feeder_feedthrough_connector. Signal pin set for wire-feed encoder, tachometer,
+  or related feeder feedback through the vacuum boundary. Controls own acquisition and interpretation;
+  this item only represents the feeder-specific feedthrough pins. Pin count, shielding, isolation, signal
+  type, and first-pass manufacturing/import route is recorded in ebf3_route_review metadata;
+  see research/ebf3_bom_sources/organized/wire_feeder_level_2_audit.md.
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Hermeticity; insulation resistance;
+  signal integrity; shielding; vacuum leak rate.'
+- Retain import until pin material, contact resistance, spacing, signal integrity, interface finish, thermal
+  cycling, and assembled feedthrough leak acceptance are defined.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_wire_feeder_feedthrough_signal_pin_set
+  source_recipe_path: kb/recipes/recipe_ebf3_wire_feeder_feedthrough_signal_pin_set.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.04
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - inspection_basic_v0
+  - electrical_testing_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - inspection_tools_basic
+  - measurement_equipment
+  - test_bench_electrical
+  - multimeter_set
+  confidence: medium
+  reasoning_brief: Conductive pins can be machined and electrically checked, but insulation resistance,
+    signal integrity, thermal cycling, and their role in the hermetic feedthrough boundary are not demonstrated.
+  blocked_machine_or_process_reason: Conductive pins can be machined and electrically checked, but insulation
+    resistance, signal integrity, thermal cycling, and their role in the hermetic feedthrough boundary
+    are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

@@ -11,7 +11,7 @@ outputs:
     qty: 1
     unit: unit
 steps:
-  - process_id: sheet_metal_cutting_v0
+  - process_id: cutting_basic_v0
     inputs:
       - item_id: steel_plate_raw
         qty: 85.0

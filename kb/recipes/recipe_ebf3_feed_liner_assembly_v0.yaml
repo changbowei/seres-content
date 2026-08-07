@@ -1,0 +1,24 @@
+id: recipe_ebf3_feed_liner_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_feed_liner
+inputs: &assembly_inputs
+- item_id: ebf3_feed_liner_tube
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_feed_liner_end_ferrule_set
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_feed_liner
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_feed_liner
+    qty: 1.0
+    unit: unit
+  notes: Assemble the liner tube and end ferrules.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

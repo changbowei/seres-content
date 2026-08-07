@@ -1,10 +1,12 @@
 id: formation_power_modules
-kind: part
+kind: assembly_part
 name: Formation power modules
 mass: 120.0
 unit: kg
-material_class: electronic
+material: electronic
 notes: Power electronics modules for charging/cycling cells during formation; includes
   current/voltage control channels.
 recipe: recipe_formation_power_modules_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

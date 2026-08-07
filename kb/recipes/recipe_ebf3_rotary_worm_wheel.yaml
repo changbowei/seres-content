@@ -1,0 +1,35 @@
+id: recipe_ebf3_rotary_worm_wheel
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_rotary_worm_wheel
+inputs:
+- item_id: bronze_block_material_v0
+  qty: 2.2
+  unit: kg
+outputs:
+- item_id: ebf3_rotary_worm_wheel
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: bronze_block_material_v0
+    qty: 2.2
+    unit: kg
+  outputs:
+  - item_id: rough_part
+    qty: 2.04
+    unit: kg
+  notes: Cut the bronze wheel and tooth geometry on the multi-axis CNC.
+- process_id: grinding_and_finishing_v0
+  inputs:
+  - item_id: rough_part
+    qty: 2.04
+    unit: kg
+  outputs:
+  - item_id: ebf3_rotary_worm_wheel
+    qty: 1.0
+    unit: unit
+  notes: Finish tooth surfaces for trial mesh.
+notes: First-pass local worm-wheel route. Backlash, contact pattern, lubrication, and rated wear life
+  remain flagged.

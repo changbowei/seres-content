@@ -1,0 +1,58 @@
+id: ebf3_floating_side_screw_radial_bearing_set
+kind: assembly_part
+name: EBF3 floating-side screw radial bearing set
+mass: 0.3
+unit: unit
+unit_kind: discrete
+material: bearing_steel
+performance_requirements:
+  geometrical_tolerances:
+    form:
+    - circularity
+    runout:
+    - circular_runout
+  surface_integrity:
+    surface_texture:
+    - surface_roughness
+  material_properties:
+    mechanical:
+    - hardness
+    - fatigue_strength
+    - wear_resistance
+  internal_integrity:
+    discontinuities:
+    - subsurface_discontinuity
+notes: Level-3 child of FS-8. Radial bearing set for floating-side ball-screw support.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve deferred Bearing type, fit, and vacuum lubrication.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_floating_side_screw_radial_bearing_set
+  source_recipe_path: kb/recipes/recipe_ebf3_floating_side_screw_radial_bearing_set.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.3
+  availability_class: expand_but_flag
+  primary_process_id: bearing_manufacturing_small_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Bearing material is local-plausible, but radial bearing race geometry, hardness, finish, lubrication, and life QA are not closed.
+  recommended_edit: Keep imported until this local process and acceptance gap is explicitly closed.
+  secondary_process_ids:
+  - bearing_set_heavy_production_v0
+  - precision_grinding_basic_v0
+  - heat_treat_basic_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - lathe_engine_v0
+  - bearing_grinding_machine_v0
+  - heat_treatment_furnace_v0
+  blocked_machine_or_process_reason: Need bearing-grade heat treatment, grinding/lapping, runout inspection, lubrication, and life acceptance before local closure.
+  confidence: medium
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

@@ -1,0 +1,55 @@
+id: ebf3_hv_lead_conductor_set
+kind: assembly_part
+name: EBF3 HV lead conductor set
+mass: 0.6
+unit: unit
+unit_kind: discrete
+material: aluminum
+notes: Child of HV-6. Oil-side high-voltage conductors between transformer, rectifier/filter sections,
+  and output bushing.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve material and cross-section.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: HV lead must meet voltage standoff geometry,
+  conductor ampacity, bend radius, termination smoothness, and insulation coordination.'
+- Retain import until ampacity, insulation system, termination radii, oil compatibility, hipot, and partial-discharge
+  acceptance are defined.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_hv_lead_conductor_set
+  source_recipe_path: kb/recipes/recipe_ebf3_hv_lead_conductor_set.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.6
+  availability_class: local_derived
+  primary_process_id: wire_drawing_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - coating_insulation_v0
+  - power_cable_assembly_v0
+  - electrical_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - drawing_die_set_basic
+  - coating_station
+  - drying_oven
+  - crimping_tool_set
+  - wire_stripper_set
+  - hand_tools_electrical
+  - test_bench_electrical
+  - multimeter_set
+  confidence: medium
+  reasoning_brief: Conductor drawing, insulation coating, termination, and basic electrical checks are
+    plausible, but corona-free HV routing, insulation coordination, oil compatibility, and partial-discharge
+    performance are not demonstrated.
+  blocked_machine_or_process_reason: Conductor drawing, insulation coating, termination, and basic electrical
+    checks are plausible, but corona-free HV routing, insulation coordination, oil compatibility, and
+    partial-discharge performance are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

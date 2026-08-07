@@ -1,0 +1,35 @@
+id: recipe_ebf3_power_input_cable_conductor_set
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_power_input_cable_conductor_set
+inputs:
+- item_id: aluminum_wire
+  qty: 0.735
+  unit: kg
+outputs:
+- item_id: ebf3_power_input_cable_conductor_set
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: wire_drawing_basic_v0
+  inputs:
+  - item_id: aluminum_wire
+    qty: 0.735
+    unit: kg
+  outputs:
+  - item_id: metal_wire_feed
+    qty: 0.7
+    unit: kg
+  notes: Draw aluminum wire to the required conductor gauge.
+- process_id: power_cable_assembly_v0
+  inputs:
+  - item_id: metal_wire_feed
+    qty: 0.7
+    unit: kg
+  outputs:
+  - item_id: ebf3_power_input_cable_conductor_set
+    qty: 1.0
+    unit: unit
+  notes: Group and terminate the conductor leaf.
+notes: First-pass local conductor route. Insulation, shielding, and system-level qualification remain
+  assigned to sibling or parent items.

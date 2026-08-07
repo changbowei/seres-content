@@ -1,10 +1,12 @@
 id: system_under_test
 is_import: true
 name: System under test
-kind: part
+kind: assembly_part
 mass: 1.0
 unit: unit
-material_class: composite
+material: composite
 notes: Placeholder assembled system awaiting load testing and commissioning.
 recipe: recipe_system_under_test_import_v0
 unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

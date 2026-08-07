@@ -1,0 +1,30 @@
+id: ebf3_hv_voltage_divider_shielded_lead
+kind: assembly_part
+name: EBF3 hv voltage divider shielded lead
+mass: 0.04
+unit: unit
+unit_kind: discrete
+material: composite
+notes: Child of ebf3_hv_output_voltage_divider_sensing. Shielded signal lead for EBF3 HV output voltage divider sensing hardware.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_hv_voltage_divider_shielded_lead
+  source_recipe_path: kb/recipes/recipe_ebf3_hv_voltage_divider_shielded_lead.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: import_as_leaf
+  simulation_import_mass_policy: import_nominal
+  mass_nominal_kg: 0.04
+  availability_class: keep_ebf3_leaf
+  primary_process_id: import_receiving_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Low-mass shielded voltage-divider lead is mixed conductor/insulation/shield interface hardware; first-pass model treats it as complex import rather than inventing cable fabrication.
+  recommended_edit: Count as complex import in the first simulation; revisit only if imported mass or functional risk dominates.
+  confidence: medium
+route_decision: import_as_leaf
+simulation_import_mass_policy: import_nominal
+is_import: true

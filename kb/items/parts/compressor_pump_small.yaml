@@ -1,9 +1,11 @@
 id: compressor_pump_small
-kind: part
+kind: assembly_part
 name: Compressor pump (small)
 mass: 40.0
 unit: kg
-material_class: steel
+material: steel
 notes: Pump/compressor head for small air compressor.
 recipe: recipe_compressor_pump_small_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

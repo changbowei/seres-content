@@ -1,10 +1,12 @@
 id: trunnion_supports
-kind: part
+kind: monolithic_part
 name: Trunnion supports
 unit: unit
 unit_kind: discrete
 mass: 2.5
 mass_kg: 2.5
-material_class: steel
+material: steel
 notes: Trunnion ends/mounts for mill shell support and rotation.
 recipe: recipe_part_trunnion_supports_v0
+trust_tags:
+- untrusted_global_kb

@@ -1,10 +1,12 @@
 id: vacuum_tube_sealed
 name: Sealed Vacuum Tube
-kind: part
+kind: monolithic_part
 mass: 0.5
 unit: kg
-material_class: glass
+material: glass
 notes: Placeholder sealed vacuum tube; used as a component in vacuum tube assemblies.
   Mass aligned with existing vacuum-tube components; refine with actual spec.
 recipe: recipe_vacuum_tube_sealed_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

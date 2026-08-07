@@ -1,0 +1,31 @@
+id: ebf3_gun_cathode_cartridge_base
+kind: monolithic_part
+name: EBF3 gun cathode cartridge base
+mass: 0.18
+unit: unit
+unit_kind: discrete
+material: composite
+notes: 'Level-3 child of FG-15. Replaceable base/holder body for locating the selected direct-heated tungsten hairpin/filament cathode package. Adopted as a physical child because BINP supports a preliminary adjusted cartridge and electron-gun package sources support mounted cathode assemblies. Exact material, datum geometry, and precision-first-pass manufacturing/import route is recorded in ebf3_route_review metadata; machining details remain coarse.
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_gun_cathode_cartridge_base
+  source_recipe_path: kb/recipes/recipe_ebf3_gun_cathode_cartridge_base.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: import_as_leaf
+  simulation_import_mass_policy: import_nominal
+  mass_nominal_kg: 0.18
+  availability_class: keep_ebf3_leaf
+  primary_process_id: import_receiving_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Electron-gun cathode cartridge datum/material package is low-mass, mixed/special hardware; first-pass model treats it as complex import rather than inventing a local cartridge process.
+  recommended_edit: Count as complex import in the first simulation; revisit only if imported mass or functional risk dominates.
+  confidence: medium
+route_decision: import_as_leaf
+simulation_import_mass_policy: import_nominal
+is_import: true

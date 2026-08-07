@@ -30,13 +30,17 @@ energy_model:
   value: 1.5
   unit: kWh/kg
   scaling_basis: sheet_metal_or_structural_steel
-  notes: Cutting, bending, punching operations
+  notes: Mechanical cutting, rolling, drilling, and handling
 time_model:
   type: linear_rate
   rate: 3.333
   rate_unit: kg/hr
   scaling_basis: sheet_metal_or_structural_steel
-  notes: Layout, cutting, bending, forming, deburring
-notes: Sheet metal cutting, bending, forming, and punching operations for creating
-  enclosures, panels, brackets, and housings.
+  notes: Layout, mechanical cutting, rolling, drilling, fitting, and deburring
+notes: Low-volume sheet and plate fabrication using mechanical cutting, rolling,
+  drilling, fitting, and deburring. The labor bot provides handling and fixturing;
+  metal_shear_or_saw, rolling_mill_v0, and drill_press provide the fabrication
+  capability. Sharp press-brake bends and part-specific stamping dies require a
+  separate qualified route.
 process_type: continuous
+is_template: true

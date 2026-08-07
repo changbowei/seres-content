@@ -1,0 +1,104 @@
+id: recipe_ebf3_high_voltage_tank
+kind: recipe
+target_item_id: ebf3_high_voltage_tank
+inputs:
+  - item_id: ebf3_hv_tank_enclosure
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_transformer_insulating_fluid
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_section_module_set
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_internal_hv_leads_terminals
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_transformer_insulation_spacers
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_tank_side_hv_output_bushing
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_cable_to_gun
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_discharge_bleeder_resistor_chain
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_output_voltage_divider_sensing
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_output_return_current_monitor
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_fill_drain_ports
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_grounding_terminal
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_temperature_sensor
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_hv_tank_pressure_relief
+    qty: 1.0
+    unit: unit
+outputs:
+  - item_id: ebf3_high_voltage_tank
+    qty: 1.0
+    unit: unit
+steps:
+  - process_id: assembly_basic_v0
+    inputs:
+      - item_id: ebf3_hv_tank_enclosure
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_transformer_insulating_fluid
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_section_module_set
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_internal_hv_leads_terminals
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_transformer_insulation_spacers
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_tank_side_hv_output_bushing
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_cable_to_gun
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_discharge_bleeder_resistor_chain
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_output_voltage_divider_sensing
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_output_return_current_monitor
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_tank_fill_drain_ports
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_tank_grounding_terminal
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_tank_temperature_sensor
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_hv_tank_pressure_relief
+        qty: 1.0
+        unit: unit
+    outputs:
+      - item_id: ebf3_high_voltage_tank
+        qty: 1.0
+        unit: unit
+    notes: Assemble ebf3_high_voltage_tank from source-table leaf items using the concise HV section-module-set model.
+notes: >
+  High voltage tank leaf items mapped from the high-voltage tank source table
+  and source-tag cleanup. Core internals use the concise HV section-module-set
+  model; no leaf recipes yet to preserve fidelity.

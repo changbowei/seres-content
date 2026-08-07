@@ -1,0 +1,44 @@
+id: recipe_ebf3_ebf_wire_guide_tip_body
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_ebf_wire_guide_tip_body
+inputs:
+- item_id: steel_bar_raw
+  qty: 0.132
+  unit: kg
+outputs:
+- item_id: ebf3_ebf_wire_guide_tip_body
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: steel_bar_raw
+    qty: 0.132
+    unit: kg
+  outputs:
+  - item_id: rough_part
+    qty: 0.1224
+    unit: kg
+  notes: Machine the rough geometry and interfaces.
+- process_id: heat_treatment_hardening_v0
+  inputs:
+  - item_id: rough_part
+    qty: 0.1224
+    unit: kg
+  outputs:
+  - item_id: heat_treated_part
+    qty: 0.1224
+    unit: kg
+  notes: Harden the required wear surfaces.
+- process_id: grinding_and_finishing_v0
+  inputs:
+  - item_id: heat_treated_part
+    qty: 0.1224
+    unit: kg
+  outputs:
+  - item_id: ebf3_ebf_wire_guide_tip_body
+    qty: 1.0
+    unit: unit
+  notes: Finish critical running and mating surfaces.
+notes: First-pass local route. Machine, harden, and finish the replaceable wire-guide body.

@@ -1,0 +1,48 @@
+id: ebf3_hv_cable_central_conductor
+kind: monolithic_part
+name: EBF3 HV cable central conductor
+mass: 0.22
+unit: unit
+unit_kind: discrete
+material: aluminum
+notes: Level-3 child of HV-9. Main conductor within the high-voltage cable carrying accelerating potential
+  from the HV tank toward the gun.
+recipe: recipe_ebf3_hv_cable_central_conductor
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve deferred Adopted as a standard HV cable constituent; conductor material, stranding, cross-section,
+  and end termination geometry.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: HV cable conductor must meet current
+  capacity, voltage stress geometry, corona avoidance, bend radius, termination quality, and thermal rise.'
+- Verify cross-section, strand geometry, bend radius, termination resistance, and current rise; parent-level
+  insulation and HV tests remain separate.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_hv_cable_central_conductor
+  source_recipe_path: kb/recipes/recipe_ebf3_hv_cable_central_conductor.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.22
+  availability_class: local_derived
+  primary_process_id: wire_drawing_basic_v0
+  executable_process_id: wire_drawing_basic_v0
+  secondary_process_ids:
+  - power_cable_assembly_v0
+  - electrical_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - drawing_die_set_basic
+  - crimping_tool_set
+  - wire_stripper_set
+  - hand_tools_electrical
+  - test_bench_electrical
+  - multimeter_set
+  confidence: medium
+  reasoning_brief: The conductor leaf can be drawn, stranded or bundled, terminated, and resistance-tested;
+    cable insulation and HV qualification belong to the parent cable.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

@@ -1,0 +1,13 @@
+id: ebf3_moveable_build_platform
+kind: assembly_part
+name: EBF3 moveable build platform
+mass: 6.7
+unit: unit
+unit_kind: discrete
+material: metal
+notes: |
+  FS-22. Moveable platform carrying substrate through motion path. Minimal child BOM: bom_ebf3_moveable_build_platform. Thermal distortion, clamp interface, and current-return topology remain deferred.
+trust_tags:
+- trusted_ebf3_unreplaced
+bom: bom_ebf3_moveable_build_platform
+recipe: recipe_ebf3_moveable_build_platform_assembly_v0

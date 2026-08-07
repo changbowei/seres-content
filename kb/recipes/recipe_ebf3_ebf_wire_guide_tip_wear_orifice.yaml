@@ -1,0 +1,53 @@
+id: recipe_ebf3_ebf_wire_guide_tip_wear_orifice
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_ebf_wire_guide_tip_wear_orifice
+inputs:
+- item_id: ceramic_powder_mixture
+  qty: 0.063
+  unit: kg
+outputs:
+- item_id: ebf3_ebf_wire_guide_tip_wear_orifice
+  qty: 1.0
+  unit: unit
+byproducts:
+- item_id: ceramic_drill_chip_waste
+  qty: 0.005
+  unit: kg
+steps:
+- process_id: ceramic_forming_basic_v0
+  inputs:
+  - item_id: ceramic_powder_mixture
+    qty: 0.063
+    unit: kg
+  outputs:
+  - item_id: green_ceramic_part
+    qty: 0.063
+    unit: kg
+  notes: Press the green ceramic blank.
+- process_id: ceramic_sintering_process_v0
+  inputs:
+  - item_id: green_ceramic_part
+    qty: 0.063
+    unit: kg
+  outputs:
+  - item_id: center_insulator_ceramic
+    qty: 0.055
+    unit: kg
+  notes: Sinter the ceramic blank.
+- process_id: machining_process_drilling_v0
+  inputs:
+  - item_id: center_insulator_ceramic
+    qty: 0.055
+    unit: kg
+  outputs:
+  - item_id: ebf3_ebf_wire_guide_tip_wear_orifice
+    qty: 1.0
+    unit: unit
+  byproducts:
+  - item_id: ceramic_drill_chip_waste
+    qty: 0.005
+    unit: kg
+  notes: Drill and finish the replaceable wire orifice.
+notes: First-pass local ceramic wear-orifice route. Bore quality, chipping, cleanliness, and wear life
+  remain trial-qualified.

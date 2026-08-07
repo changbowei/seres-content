@@ -1,9 +1,11 @@
 id: gas_blower_basic
-kind: part
+kind: assembly_part
 name: Gas blower (basic)
 mass: 30.0
 unit: kg
-material_class: steel
+material: steel
 notes: Blower/fan for gas recirculation; coarse mass estimate.
 recipe: recipe_gas_blower_basic_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

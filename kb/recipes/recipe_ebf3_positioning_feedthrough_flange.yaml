@@ -1,0 +1,25 @@
+id: recipe_ebf3_positioning_feedthrough_flange
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_positioning_feedthrough_flange
+inputs:
+- item_id: steel_bar_raw
+  qty: 0.21
+  unit: kg
+outputs:
+- item_id: ebf3_positioning_feedthrough_flange
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: steel_bar_raw
+    qty: 0.21
+    unit: kg
+  outputs:
+  - item_id: ebf3_positioning_feedthrough_flange
+    qty: 1.0
+    unit: unit
+  notes: Machine the mechanical flange and sealing face; the parent feedthrough owns hermetic qualification.
+notes: First-pass local machining route. Residual inspection, calibration, or parent-level qualification
+  is recorded on the item as a non-blocking verification gap.

@@ -1,0 +1,13 @@
+id: ebf3_gun_beam_boundary_pickup
+kind: assembly_part
+name: EBF3 gun beam boundary pickup
+mass: 0.18
+unit: unit
+unit_kind: discrete
+material: composite
+notes: |
+  FG-9. Beam-boundary pickup assembly for detecting beam deviation or beam impingement beyond allowed limits. Minimal child BOM: bom_ebf3_gun_beam_boundary_pickup, with collector and local isolation only. Local signal leads belong to FG-19; feedthrough interface and controls-side acquisition remain deferred. See research/ebf3_bom_sources/organized/beam_diagnostics_decomposition_plan.md.
+trust_tags:
+- trusted_ebf3_unreplaced
+bom: bom_ebf3_gun_beam_boundary_pickup
+recipe: recipe_ebf3_gun_beam_boundary_pickup_assembly_v0

@@ -1,0 +1,13 @@
+id: ebf3_gun_feeder_adapter
+kind: assembly_part
+name: EBF3 gun-feeder adapter
+mass: 0.54
+unit: unit
+unit_kind: discrete
+material: composite
+notes: |
+  WF-22. Adapter connecting the feeder output to the downstream guide/nozzle or gun-side interface. This does not replace the chamber-side wire-feeder mounting port or a permanent gun-column datum. Minimal child BOM: bom_ebf3_gun_feeder_adapter. Keep adapter geometry, final guide-tip boundary, and gun/feeder physical interface unresolved until sourced or selected. See research/ebf3_bom_sources/organized/wire_feeder_level_2_audit.md.
+trust_tags:
+- trusted_ebf3_unreplaced
+bom: bom_ebf3_gun_feeder_adapter
+recipe: recipe_ebf3_gun_feeder_adapter_assembly_v0

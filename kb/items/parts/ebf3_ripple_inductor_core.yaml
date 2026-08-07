@@ -1,0 +1,51 @@
+id: ebf3_ripple_inductor_core
+kind: monolithic_part
+name: EBF3 ripple inductor core
+mass: 0.35
+unit: unit
+unit_kind: discrete
+material: electrical_steel_or_soft_iron
+notes: Child of ebf3_ripple_damping_inductor. Magnetic core for EBF3 ripple damping inductor.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Ripple inductor core must meet permeability,
+  saturation current, frequency loss, gap stability, temperature rise, and insulation compatibility.'
+- Retain import until material state, air gap, inductance, saturation, loss versus frequency, and thermal
+  acceptance can be measured.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_ripple_inductor_core
+  source_recipe_path: kb/recipes/recipe_ebf3_ripple_inductor_core.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.35
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - annealing_basic_v0
+  - assembly_basic_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - heat_treatment_furnace_v0
+  - assembly_tools_basic
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Core shaping, annealing, and assembly are physically plausible, but frequency-dependent
+    loss, saturation, air-gap control, residual magnetism, and temperature rise are not demonstrated.
+  blocked_machine_or_process_reason: Core shaping, annealing, and assembly are physically plausible, but
+    frequency-dependent loss, saturation, air-gap control, residual magnetism, and temperature rise are
+    not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

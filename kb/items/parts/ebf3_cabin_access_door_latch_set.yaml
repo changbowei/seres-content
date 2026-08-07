@@ -1,0 +1,13 @@
+id: ebf3_cabin_access_door_latch_set
+kind: assembly_part
+name: EBF3 cabin access door latch set
+mass: 2.5
+unit: unit
+unit_kind: discrete
+material: metal
+notes: |
+  Source-first child split for the cabin access door latch set. The child BOM is function-level only; latch topology, seal compression force, material grades, tolerances, and local manufacturing route remain unresolved. See research/ebf3_bom_sources/organized/split_before_route_leaf_decomposition_plan.md.
+bom: bom_ebf3_cabin_access_door_latch_set
+recipe: recipe_ebf3_cabin_access_door_latch_set_assembly_v0
+trust_tags:
+- trusted_ebf3_unreplaced

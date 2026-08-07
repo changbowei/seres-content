@@ -1,9 +1,9 @@
 id: display_screen_small
 name: Display screen (small)
-kind: part
+kind: monolithic_part
 mass: 0.5
 unit: kg
-material_class: electronic
+material: electronic
 is_import: true
 notes: Small LCD or OLED display screen for equipment interfaces and monitoring. Import
   until display manufacturing established.

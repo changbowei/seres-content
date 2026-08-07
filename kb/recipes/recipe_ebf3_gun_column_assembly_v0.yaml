@@ -1,0 +1,30 @@
+id: recipe_ebf3_gun_column_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_gun_column
+inputs: &assembly_inputs
+- item_id: ebf3_gun_column_body_shell
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_column_internal_support_frame
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_column_optical_axis_datum_set
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_column_gun_side_mating_flange
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_gun_column
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_gun_column
+    qty: 1.0
+    unit: unit
+  notes: Assemble the gun-column shell, support frame, datum set, and mating flange.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

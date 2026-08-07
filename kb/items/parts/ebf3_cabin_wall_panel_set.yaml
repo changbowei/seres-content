@@ -1,0 +1,50 @@
+id: ebf3_cabin_wall_panel_set
+kind: assembly_part
+name: EBF3 cabin wall panel set
+mass: 34.0
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of MC-2. Vacuum-boundary chamber wall panel set.
+recipe: recipe_ebf3_cabin_wall_panel_set
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve panel count, thickness, alloy, fabrication route, and leak-test requirements.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: vacuum wall leak rate; panel flatness;
+  joint sealing; thermal distortion.'
+- Close panel forming, welding/joining, seal interface, and leak-test chain before dropping import fallback.
+- Verify panel stiffness, seam distortion, interface flatness, and assembled leak rate; conservative thickness
+  and rework are accepted in the first pass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_cabin_wall_panel_set
+  source_recipe_path: kb/recipes/recipe_ebf3_cabin_wall_panel_set.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 34.0
+  availability_class: local_derived
+  primary_process_id: sheet_metal_fabrication_v0
+  executable_process_id: sheet_metal_fabrication_v0
+  secondary_process_ids:
+  - welded_fabrication_basic_v0
+  - machining_basic_v0
+  - leak_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - metal_shear_or_saw
+  - rolling_mill_v0
+  - drill_press
+  - welding_power_supply_v0
+  - welding_tools_set
+  - fixturing_workbench
+  - multi_axis_cnc_machining_center
+  - leak_test_equipment
+  confidence: medium
+  reasoning_brief: Sheet fabrication, joining, interface machining, and leak testing can produce the wall
+    panels; distortion and long-term vacuum behavior remain flagged.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

@@ -1,0 +1,47 @@
+id: ebf3_positioning_bellows_folded_cover
+kind: monolithic_part
+name: EBF3 positioning bellows folded cover
+mass: 0.55
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of ebf3_positioning_bellows_cover. Folded bellows cover for EBF3 positioning bellows cover.
+recipe: recipe_ebf3_positioning_bellows_folded_cover
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Bellows flex life; particle shedding;
+  vacuum compatibility; fold thickness uniformity; travel clearance.'
+- Verify fold geometry, clearance, joint integrity, particle generation, and flex life; this route assumes
+  a protective cover rather than a hermetic bellows.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_positioning_bellows_folded_cover
+  source_recipe_path: kb/recipes/recipe_ebf3_positioning_bellows_folded_cover.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.55
+  availability_class: local_derived
+  primary_process_id: sheet_metal_bending_and_forming_v0
+  executable_process_id: sheet_metal_bending_and_forming_v0
+  secondary_process_ids:
+  - welded_fabrication_basic_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - plate_rolling_mill
+  - welding_power_supply_v0
+  - welding_tools_set
+  - fixturing_workbench
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Thin-sheet forming, joining, and inspection can produce the protective folded cover;
+    flex life remains a replaceable-part sensitivity.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

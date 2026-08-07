@@ -1,9 +1,11 @@
 id: refractory_lining_set
-kind: part
+kind: assembly_part
 name: Refractory lining set
 mass: 120.0
 unit: kg
-material_class: ceramic
+material: ceramic
 notes: Refractory bricks/lining for furnace interior.
 recipe: recipe_refractory_lining_set_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

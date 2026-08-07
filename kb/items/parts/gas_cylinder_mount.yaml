@@ -1,8 +1,10 @@
 id: gas_cylinder_mount
 name: Gas cylinder mount
-kind: part
+kind: assembly_part
 mass: 4.0
 unit: kg
-material_class: steel
+material: steel
 recipe: recipe_gas_cylinder_mount_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

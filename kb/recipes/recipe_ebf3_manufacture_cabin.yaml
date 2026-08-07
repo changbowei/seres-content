@@ -1,0 +1,68 @@
+id: recipe_ebf3_manufacture_cabin
+kind: recipe
+target_item_id: ebf3_manufacture_cabin
+inputs:
+  - item_id: ebf3_cabin_frame
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_wall_panels
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_access_door
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_gun_mounting_port
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_wire_feeder_mounting_port
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_sacrificial_liner
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_positioning_mount_interface
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_cabin_lighting_mount_and_port
+    qty: 1.0
+    unit: unit
+outputs:
+  - item_id: ebf3_manufacture_cabin
+    qty: 1.0
+    unit: unit
+steps:
+  - process_id: assembly_basic_v0
+    inputs:
+      - item_id: ebf3_cabin_frame
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_wall_panels
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_access_door
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_gun_mounting_port
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_wire_feeder_mounting_port
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_sacrificial_liner
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_positioning_mount_interface
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_cabin_lighting_mount_and_port
+        qty: 1.0
+        unit: unit
+    outputs:
+      - item_id: ebf3_manufacture_cabin
+        qty: 1.0
+        unit: unit
+    notes: Assemble ebf3_manufacture_cabin from source-table leaf items.
+notes: >
+  Manufacture cabin Level-2 items aligned by
+  research/ebf3_bom_sources/organized/manufacture_cabin_level_2_audit.md. No
+  leaf recipes yet to preserve fidelity.

@@ -1,12 +1,14 @@
 id: gearbox_heavy_duty
-kind: part
+kind: assembly_part
 name: Heavy-duty gearbox
 mass: 50.0
 unit: kg
-material_class: steel
+material: steel
 notes: Heavy-duty speed reducer gearbox for high torque applications. Cast iron or
   steel housing with hardened steel gears. Multiple stages for high reduction ratios.
   Used in conveyors, mills, crushers, and drive systems. Includes lubrication system
   and mounting flanges.
 recipe: recipe_gearbox_heavy_duty_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

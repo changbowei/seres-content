@@ -1,0 +1,56 @@
+id: ebf3_tank_side_bushing_field_grading_shield
+kind: monolithic_part
+name: EBF3 tank-side bushing field grading shield
+mass: 0.12
+unit: unit
+unit_kind: discrete
+material: aluminum
+notes: 'Level-3 child of HV-8. Tank-side field-grading or corona-control shield marker associated with
+  the HV output bushing/socket interface. This is separate from gun-side insulator field grading and does
+  not define the final connector geometry. Shape, potential connection, material, surface finish, oil
+  exposure, and first-pass manufacturing/import route is recorded in ebf3_route_review metadata;
+  see research/ebf3_bom_sources/organized/hv_tank_interface_hardware_plan.md and research/ebf3_bom_sources/organized/ebf3_interface_architecture.md.
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace validation-scaled generic stock inputs with explicit EBF material lower/upper bounds and material-specific
+  recipe inputs.
+- 'Encode or verify performance requirements outside prose notes: Field grading geometry; corona suppression;
+  surface finish; HV oil or vacuum compatibility.'
+- Retain import until electrostatic design limits and assembled HV/corona/partial-discharge acceptance
+  demonstrate the field-grading function.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_tank_side_bushing_field_grading_shield
+  source_recipe_path: kb/recipes/recipe_ebf3_tank_side_bushing_field_grading_shield.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  mass_nominal_kg: 0.12
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - grinding_and_finishing_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - surface_grinder
+  - grinding_wheels
+  - work_rest_adjustable
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: CNC and polishing can make the shield geometry, but suppressing field concentration,
+    corona, and partial discharge is the leaf's primary function and is not demonstrated by dimensional
+    inspection.
+  import_reason: performance_not_verified
+  blocked_machine_or_process_reason: CNC and polishing can make the shield geometry, but suppressing field
+    concentration, corona, and partial discharge is the leaf's primary function and is not demonstrated
+    by dimensional inspection.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

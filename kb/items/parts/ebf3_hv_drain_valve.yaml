@@ -1,0 +1,44 @@
+id: ebf3_hv_drain_valve
+kind: assembly_part
+name: EBF3 HV tank drain valve
+mass: 0.2
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of HV-13. Drain valve or drain fitting for transformer insulating fluid.
+recipe: recipe_ebf3_hv_drain_valve
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve valve type, seal material, and service procedure.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Oil compatibility; leak tightness; relief
+  isolation; dielectric contamination control.'
+- Define valve body machining, seal material, assembly, and leak/pressure test chain.
+- Select an oil-compatible seal, then verify seat finish, actuation, cleanliness, pressure retention,
+  and leak rate; imported seal mass must remain visible.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_hv_drain_valve
+  source_recipe_path: kb/recipes/recipe_ebf3_hv_drain_valve.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.2
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: machining_basic_v0
+  secondary_process_ids:
+  - assembly_basic_v0
+  - leak_testing_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - assembly_tools_basic
+  - leak_test_equipment
+  confidence: medium
+  reasoning_brief: CNC seat/body fabrication, seal installation during assembly, and leak testing can
+    close a low-duty drain valve using imported seal stock if required.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

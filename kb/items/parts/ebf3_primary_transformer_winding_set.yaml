@@ -1,0 +1,51 @@
+id: ebf3_primary_transformer_winding_set
+kind: assembly_part
+name: EBF3 primary transformer winding set
+mass: 1.3
+unit: unit
+unit_kind: discrete
+material: aluminum
+notes: Child of ebf3_primary_isolation_transformer. Winding set for EBF3 primary isolation transformer.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: turn insulation; dielectric withstand;
+  current density; thermal rise; transformer coupling.'
+- Add winding-specific process chain and QA; keep import fallback until chain is executable.
+- Retain import until winding geometry, insulation system, hipot, partial discharge, resistance, temperature
+  rise, and oil compatibility can be accepted.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_primary_transformer_winding_set
+  source_recipe_path: kb/recipes/recipe_ebf3_primary_transformer_winding_set.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 1.3
+  availability_class: local_derived
+  primary_process_id: wire_drawing_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - coil_winding_basic_v0
+  - electrical_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - drawing_die_set_basic
+  - coil_winding_machine
+  - test_bench_electrical
+  - multimeter_set
+  confidence: medium
+  reasoning_brief: Wire preparation, insulation placement, controlled winding, and basic electrical checks
+    are physically plausible, but isolation voltage, partial discharge, temperature rise, and oil compatibility
+    are not demonstrated.
+  blocked_machine_or_process_reason: Wire preparation, insulation placement, controlled winding, and basic
+    electrical checks are physically plausible, but isolation voltage, partial discharge, temperature
+    rise, and oil compatibility are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

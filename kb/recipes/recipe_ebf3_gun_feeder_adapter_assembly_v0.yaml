@@ -1,0 +1,24 @@
+id: recipe_ebf3_gun_feeder_adapter_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_gun_feeder_adapter
+inputs: &assembly_inputs
+- item_id: ebf3_gun_feeder_adapter_body
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_feeder_wire_path_alignment_sleeve
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_gun_feeder_adapter
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_gun_feeder_adapter
+    qty: 1.0
+    unit: unit
+  notes: Assemble the adapter body and wire-path alignment sleeve.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

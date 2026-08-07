@@ -1,0 +1,13 @@
+id: ebf3_linear_guide_carriages
+kind: assembly_part
+name: EBF3 linear guide carriages
+mass: 1.9
+unit: unit
+unit_kind: discrete
+material: metal
+notes: |
+  FS-4. Linear guide carriage/block assemblies. Minimal child BOM: bom_ebf3_linear_guide_carriages. Lower-level precision motion requirements remain on the child items.
+trust_tags:
+- trusted_ebf3_unreplaced
+bom: bom_ebf3_linear_guide_carriages
+recipe: recipe_ebf3_linear_guide_carriages_assembly_v0

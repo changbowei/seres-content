@@ -1,0 +1,27 @@
+id: recipe_ebf3_hv_tank_enclosure_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_hv_tank_enclosure
+inputs: &assembly_inputs
+- item_id: ebf3_hv_tank_shell
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_hv_tank_lid
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_hv_tank_lid_seal
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_hv_tank_enclosure
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_hv_tank_enclosure
+    qty: 1.0
+    unit: unit
+  notes: Assemble the tank shell, lid, and lid seal.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

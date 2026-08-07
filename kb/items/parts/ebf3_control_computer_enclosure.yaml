@@ -1,0 +1,37 @@
+id: ebf3_control_computer_enclosure
+kind: assembly_part
+name: EBF3 control computer enclosure
+mass: 2.0
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of ebf3_control_computer. EBF-specific industrial control-computer enclosure replacing the untrusted generic enclosure proxy.
+recipe: recipe_ebf3_control_computer_enclosure
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace residual mass-budget estimate with sourced lower/upper mass bounds if this enclosure dominates local manufacturing mass.
+- Encode electronics mounting, EMI shielding, grounding, ventilation, connector access, and service access requirements outside prose notes.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_control_computer_enclosure
+  source_recipe_path: kb/recipes/recipe_ebf3_control_computer_enclosure.yaml
+  source_queue_type: ebf3_enclosure_proxy_cleanup
+  route_decision: lunar_candidate
+  simulation_import_mass_policy: local_nominal
+  mass_nominal_kg: 2.0
+  availability_class: local_derived
+  primary_process_id: sheet_metal_fabrication_v0
+  executable_process_id: sheet_metal_fabrication_v0
+  secondary_process_ids:
+  - sheet_metal_fabrication_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - metal_shear_or_saw
+  - rolling_mill_v0
+  - drill_press
+  confidence: medium
+  reasoning_brief: EBF-specific control computer enclosure is ordinary local steel sheet-metal fabrication; EMI, grounding, ventilation, connector access, and service fit remain requirements.
+route_decision: lunar_candidate
+simulation_import_mass_policy: local_nominal

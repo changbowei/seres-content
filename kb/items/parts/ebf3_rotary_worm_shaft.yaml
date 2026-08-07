@@ -1,0 +1,68 @@
+id: ebf3_rotary_worm_shaft
+kind: monolithic_part
+name: EBF3 rotary worm shaft
+mass: 1.5
+unit: unit
+unit_kind: discrete
+performance_requirements:
+  geometrical_tolerances:
+    form:
+    - line_profile
+    runout:
+    - circular_runout
+  surface_integrity:
+    surface_texture:
+    - surface_roughness
+  material_properties:
+    mechanical:
+    - hardness
+    - wear_resistance
+  internal_integrity:
+    discontinuities:
+    - internal_crack
+material: hardened_steel
+notes: 'FS-20. Threaded worm shaft driving the rotary-axis worm wheel. Rotary motor hardware is covered
+  by the broader FS-9 axis motor row until a later motor/rotary-drive decomposition separates it. Intentional
+  Level-2 precision metal leaf; thread profile, bearing seats, material pairing, lubrication, and first-pass
+  manufacturing/import route is recorded in the linked EBF3 route-review recipe. See research/ebf3_bom_sources/organized/four_axis_positioning_level_2_audit.md.
+  First-pass manufacturing/import route is recorded in the linked EBF3 route-review recipe. recipe: recipe_ebf3_rotary_worm_shaft
+
+  '
+recipe: recipe_ebf3_rotary_worm_shaft
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- Verify runout, tooth finish, hardness, backlash, lubrication, and wear by trial mesh; first-pass local
+  credit does not imply rated service life.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_rotary_worm_shaft
+  source_recipe_path: kb/recipes/recipe_ebf3_rotary_worm_shaft.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 1.5
+  availability_class: expand_but_flag
+  primary_process_id: machining_basic_v0
+  executable_process_id: machining_basic_v0
+  reasoning_brief: CNC machining, hardening, finishing, and mesh trial can produce an adjustable worm
+    shaft; industrial wear life remains unproven.
+  recommended_edit: Keep imported until this local process and acceptance gap is explicitly closed.
+  secondary_process_ids:
+  - heat_treatment_hardening_v0
+  - grinding_and_finishing_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - heat_treatment_furnace_v0
+  - labor_bot_general_v0
+  - surface_grinder
+  - grinding_wheels
+  - work_rest_adjustable
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

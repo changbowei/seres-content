@@ -1,0 +1,63 @@
+id: ebf3_wire_feed_pressure_roll
+kind: monolithic_part
+name: EBF3 wire feed pressure roll
+mass: 0.25
+unit: unit
+unit_kind: discrete
+performance_requirements:
+  geometrical_tolerances:
+    form:
+    - circularity
+    runout:
+    - circular_runout
+  surface_integrity:
+    surface_texture:
+    - surface_roughness
+  material_properties:
+    mechanical:
+    - hardness
+    - wear_resistance
+material: steel
+notes: Level-3 child of WF-13. Pressure/idler roll in the wire-feed pressure-arm assembly. Reintroduced
+  below the source-table aligned pressure arm instead of as a top-level wire-feeder row. See research/ebf3_bom_sources/organized/wire_feeder_level_2_audit.md.
+  First-pass manufacturing/import route is recorded in the linked EBF3 route-review recipe.
+recipe: recipe_ebf3_wire_feed_pressure_roll
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve deferred Groove/profile, bearing interface, material, and vacuum wear details.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Pressure roll must meet concentricity,
+  surface finish, grip force, wear resistance, and avoid wire contamination/damage.'
+- Verify concentricity, surface finish, hardness, grip force, contamination, and wear through feed trials;
+  treat service life as a sensitivity.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_wire_feed_pressure_roll
+  source_recipe_path: kb/recipes/recipe_ebf3_wire_feed_pressure_roll.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.25
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: machining_basic_v0
+  secondary_process_ids:
+  - heat_treatment_hardening_v0
+  - grinding_and_finishing_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - heat_treatment_furnace_v0
+  - labor_bot_general_v0
+  - surface_grinder
+  - grinding_wheels
+  - work_rest_adjustable
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: CNC, hardening, finishing, and feed-force trials can produce a replaceable pressure
+    roll; rated wear life remains uncertain.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

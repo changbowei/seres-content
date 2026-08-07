@@ -1,0 +1,25 @@
+id: recipe_ebf3_positioning_feedthrough_shield_termination_interface
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_positioning_feedthrough_shield_termination_interface
+inputs:
+- item_id: aluminum_metal_pure
+  qty: 0.0525
+  unit: kg
+outputs:
+- item_id: ebf3_positioning_feedthrough_shield_termination_interface
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: aluminum_metal_pure
+    qty: 0.0525
+    unit: kg
+  outputs:
+  - item_id: ebf3_positioning_feedthrough_shield_termination_interface
+    qty: 1.0
+    unit: unit
+  notes: Machine the shield termination interface; continuity remains a flagged acceptance check.
+notes: First-pass local machining route. Residual inspection, calibration, or parent-level qualification
+  is recorded on the item as a non-blocking verification gap.

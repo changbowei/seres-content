@@ -1,0 +1,10 @@
+id: coded_data_stream
+name: Coded data stream
+kind: resource
+mass: 0.01
+unit: unit
+notes: Output data stream after error-correction coding v0.
+recipe: recipe_coded_data_stream_v0
+unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

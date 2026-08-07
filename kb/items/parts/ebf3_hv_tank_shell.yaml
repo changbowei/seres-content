@@ -1,0 +1,48 @@
+id: ebf3_hv_tank_shell
+kind: monolithic_part
+name: EBF3 HV tank shell
+mass: 8.0
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of HV-1. Main oil-containing tank shell for high-voltage components.
+recipe: recipe_ebf3_hv_tank_shell
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve exact alloy, wall thickness, weld/seam route, and pressure/vacuum test method.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: oil or vacuum containment; HV clearance;
+  leak tight seams; structural stiffness; thermal expansion.'
+- Define shell forming welding sealing and HV/oil qualification before localizing.
+- Verify wall thickness, weld quality, interface flatness, cleanliness, pressure/leak behavior, and oil
+  compatibility; conservative thickness and rework are accepted.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_hv_tank_shell
+  source_recipe_path: kb/recipes/recipe_ebf3_hv_tank_shell.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 8.0
+  availability_class: local_derived
+  primary_process_id: sheet_metal_bending_and_forming_v0
+  executable_process_id: sheet_metal_bending_and_forming_v0
+  secondary_process_ids:
+  - welded_fabrication_basic_v0
+  - machining_basic_v0
+  - leak_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - plate_rolling_mill
+  - welding_power_supply_v0
+  - welding_tools_set
+  - fixturing_workbench
+  - multi_axis_cnc_machining_center
+  - leak_test_equipment
+  confidence: medium
+  reasoning_brief: Plate forming, welding, interface machining, and leak testing can produce the steel
+    oil-tank shell; distortion and service qualification remain flagged.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

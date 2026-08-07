@@ -1,0 +1,53 @@
+id: ebf3_primary_transformer_core
+kind: assembly_part
+name: EBF3 primary transformer core
+mass: 1.5
+unit: unit
+unit_kind: discrete
+material: electrical_steel_or_soft_iron
+notes: Child of ebf3_primary_isolation_transformer. Transformer core for EBF3 primary isolation transformer.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Transformer core must meet magnetic
+  permeability, saturation flux, lamination thickness, core loss, insulation between laminations, temperature
+  rise, and acoustic/vibration constraints.'
+- Retain import until core material state, stack factor, interlaminar insulation, saturation, core loss,
+  and thermal acceptance can be measured.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_primary_transformer_core
+  source_recipe_path: kb/recipes/recipe_ebf3_primary_transformer_core.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 1.5
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - annealing_basic_v0
+  - assembly_basic_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - heat_treatment_furnace_v0
+  - assembly_tools_basic
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Electrical-steel cutting, annealing, stacking, and assembly are physically plausible,
+    but saturation, core loss, magnetizing current, interlaminar insulation, and temperature rise are
+    not demonstrated.
+  blocked_machine_or_process_reason: Electrical-steel cutting, annealing, stacking, and assembly are physically
+    plausible, but saturation, core loss, magnetizing current, interlaminar insulation, and temperature
+    rise are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

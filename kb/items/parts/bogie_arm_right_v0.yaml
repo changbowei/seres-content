@@ -1,10 +1,11 @@
 id: bogie_arm_right_v0
-kind: part
+kind: monolithic_part
 name: Bogie arm (right) v0
 mass: 2.5
 unit: kg
-material_class: steel
+material: steel
 recipe: recipe_bogie_arm_right_v0
 unit_kind: bulk
 notes: Right-side bogie arm for wheel-pair articulation.
-
+trust_tags:
+- untrusted_global_kb

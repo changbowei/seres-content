@@ -1,0 +1,24 @@
+id: recipe_ebf3_gun_secondary_electron_pickup_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_gun_secondary_electron_pickup
+inputs: &assembly_inputs
+- item_id: ebf3_gun_secondary_electron_ring_collector
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_secondary_pickup_insulator
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_gun_secondary_electron_pickup
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_gun_secondary_electron_pickup
+    qty: 1.0
+    unit: unit
+  notes: Assemble the ring collector and local insulator.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

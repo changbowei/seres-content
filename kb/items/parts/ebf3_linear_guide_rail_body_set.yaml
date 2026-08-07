@@ -1,0 +1,53 @@
+id: ebf3_linear_guide_rail_body_set
+kind: assembly_part
+name: EBF3 linear guide rail body set
+mass: 2.4
+unit: unit
+unit_kind: discrete
+material: hardened_steel
+notes: Child of ebf3_linear_guide_rails. Linear rail body set for EBF3 linear guide rails.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: straightness; raceway hardness; preload
+  compatibility; surface finish; vacuum compatible lubrication.'
+- Retain import until rail straightness, race hardness/profile, preload fit, lubrication, and guide life
+  can be accepted.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_linear_guide_rail_body_set
+  source_recipe_path: kb/recipes/recipe_ebf3_linear_guide_rail_body_set.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 2.4
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - heat_treatment_hardening_v0
+  - grinding_and_finishing_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - heat_treatment_furnace_v0
+  - labor_bot_general_v0
+  - surface_grinder
+  - grinding_wheels
+  - work_rest_adjustable
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Machining, hardening, and finishing are physically available, but rail straightness,
+    race geometry, preload compatibility, rolling-contact fatigue, and service life are not demonstrated.
+  blocked_machine_or_process_reason: Machining, hardening, and finishing are physically available, but
+    rail straightness, race geometry, preload compatibility, rolling-contact fatigue, and service life
+    are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

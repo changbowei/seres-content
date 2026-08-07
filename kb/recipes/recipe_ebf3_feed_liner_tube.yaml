@@ -1,0 +1,69 @@
+id: recipe_ebf3_feed_liner_tube
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_feed_liner_tube
+inputs:
+- item_id: metal_tubing_stock
+  qty: 0.31
+  unit: kg
+- item_id: cleaning_solvent_or_detergent_v0
+  qty: 0.03
+  unit: kg
+outputs:
+- item_id: ebf3_feed_liner_tube
+  qty: 1.0
+  unit: unit
+byproducts:
+- item_id: steel_scrap
+  qty: 0.03
+  unit: kg
+steps:
+- process_id: tube_bending_and_cutting_v0
+  inputs:
+  - item_id: metal_tubing_stock
+    qty: 0.31
+    unit: kg
+  outputs:
+  - item_id: rough_part
+    qty: 0.28
+    unit: kg
+  byproducts:
+  - item_id: steel_scrap
+    qty: 0.03
+    unit: kg
+  notes: Cut tube stock to length; tube stock is the route basis.
+- process_id: machining_finish_basic_v0
+  inputs:
+  - item_id: rough_part
+    qty: 0.28
+    unit: kg
+  outputs:
+  - item_id: machined_part_raw
+    qty: 0.28
+    unit: kg
+  notes: End-face, ream/polish bore, and deburr the wire path.
+- process_id: cleaning_basic_v0
+  inputs:
+  - item_id: machined_part_raw
+    qty: 0.28
+    unit: kg
+  - item_id: cleaning_solvent_or_detergent_v0
+    qty: 0.03
+    unit: kg
+  outputs:
+  - item_id: part_cleaned
+    qty: 0.28
+    unit: kg
+  notes: Clean the machined liner before wire-feed service.
+- process_id: inspection_basic_v0
+  inputs:
+  - item_id: part_cleaned
+    qty: 0.28
+    unit: kg
+  outputs:
+  - item_id: ebf3_feed_liner_tube
+    qty: 1.0
+    unit: unit
+  notes: Inspect bore smoothness, burrs, cleanliness, and alignment-critical dimensions.
+notes: First-pass local tube-stock route using cutting, CNC bore/end finishing, cleaning, and inspection.
+  Wire-feed wear and vacuum cleanliness remain non-blocking verification gaps.

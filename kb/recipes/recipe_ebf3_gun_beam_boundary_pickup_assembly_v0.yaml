@@ -1,0 +1,24 @@
+id: recipe_ebf3_gun_beam_boundary_pickup_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_gun_beam_boundary_pickup
+inputs: &assembly_inputs
+- item_id: ebf3_gun_beam_boundary_collector_electrode
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_beam_boundary_pickup_insulator
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_gun_beam_boundary_pickup
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_gun_beam_boundary_pickup
+    qty: 1.0
+    unit: unit
+  notes: Assemble the collector electrode and local insulator.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

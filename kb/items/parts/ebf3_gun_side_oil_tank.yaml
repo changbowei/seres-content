@@ -1,0 +1,31 @@
+id: ebf3_gun_side_oil_tank
+kind: assembly_part
+name: EBF3 gun-side oil tank
+mass: 0.9
+unit: unit
+unit_kind: discrete
+material: composite
+notes: 'FG-18. Gun-side oil tank assembly providing local high-voltage insulation volume near the cathode and HV region. Unresolved Level-2 boundary marker: source evidence supports only the general electron-gun/HV oil-tank package class. This item is not the main high-voltage tank, tank-side bushing, HV cable, or tank-side HV generation enclosure. Do not decompose into shell, lid, oil, or seals until EBF3-specific gun-side oil-volume evidence is found. See research/ebf3_bom_sources/organized/hv_gun_side_insulation_decomposition_plan.md and research/ebf3_bom_sources/organized/hv_tank_interface_review.md. First-pass manufacturing/import route is recorded in ebf3_route_review metadata
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_gun_side_oil_tank
+  source_recipe_path: kb/recipes/recipe_ebf3_gun_side_oil_tank.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: import_as_leaf
+  simulation_import_mass_policy: import_nominal
+  mass_nominal_kg: 0.9
+  availability_class: keep_ebf3_leaf
+  primary_process_id: import_receiving_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Source/architecture boundary marker for the gun-side HV oil-tank package; split into shell, oil, seals, and fittings only after EBF3-specific oil-volume evidence or if the mass dominates.
+  recommended_edit: Count as complex import in the first simulation; decompose only if this boundary dominates imported mass or functional closure.
+  confidence: medium
+route_decision: import_as_leaf
+simulation_import_mass_policy: import_nominal
+is_import: true

@@ -1,0 +1,13 @@
+id: ebf3_hv_tank_enclosure
+kind: assembly_part
+name: EBF3 HV tank enclosure
+mass: 10.5
+unit: unit
+unit_kind: discrete
+material: metal
+notes: |
+  HV-1. Oil-filled high-voltage tank enclosure for transformer, rectifier, filter, and interfaces. This assembly is split by `bom_ebf3_hv_tank_enclosure`. Tank geometry, oil compatibility, seams, lid sealing, and HV clearance remain unresolved.
+trust_tags:
+- trusted_ebf3_unreplaced
+bom: bom_ebf3_hv_tank_enclosure
+recipe: recipe_ebf3_hv_tank_enclosure_assembly_v0

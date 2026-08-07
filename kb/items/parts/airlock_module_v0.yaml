@@ -1,9 +1,9 @@
 id: airlock_module_v0
 name: Airlock module
-kind: part
+kind: assembly_part
 mass: 120.0
 unit: kg
-material_class: steel
+material: steel
 notes: 'Airlock module for habitat integration. Placeholder mass and minimal definition
 
   to resolve the referenced gap in seeds. Will be refined with BOM/components in
@@ -13,3 +13,5 @@ notes: 'Airlock module for habitat integration. Placeholder mass and minimal def
   '
 recipe: recipe_airlock_module_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

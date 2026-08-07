@@ -1,0 +1,53 @@
+id: ebf3_y_axis_ball_screw_shaft
+kind: monolithic_part
+name: EBF3 y axis ball screw shaft
+mass: 1.0
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of ebf3_ball_screw_shafts. Y-axis ball screw shaft for EBF3 ball screw shafts.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: Lead accuracy; straightness; surface
+  finish; preload compatibility; vacuum lubricant compatibility.'
+- Retain import until lead error, race profile, hardness, runout, preload, lubrication, efficiency, and
+  life can be accepted with the ball nut.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_y_axis_ball_screw_shaft
+  source_recipe_path: kb/recipes/recipe_ebf3_y_axis_ball_screw_shaft.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 1.0
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - heat_treatment_hardening_v0
+  - grinding_and_finishing_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - heat_treatment_furnace_v0
+  - labor_bot_general_v0
+  - surface_grinder
+  - grinding_wheels
+  - work_rest_adjustable
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Machining, hardening, and finishing can make the screw shaft, but lead accuracy, preload
+    compatibility, rolling-contact fatigue, vacuum lubrication, and service life are not demonstrated.
+  blocked_machine_or_process_reason: Machining, hardening, and finishing can make the screw shaft, but
+    lead accuracy, preload compatibility, rolling-contact fatigue, vacuum lubrication, and service life
+    are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

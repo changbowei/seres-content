@@ -1,0 +1,35 @@
+id: recipe_ebf3_positioning_bellows_folded_cover
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_positioning_bellows_folded_cover
+inputs:
+- item_id: steel_sheet_1mm
+  qty: 0.58025
+  unit: kg
+outputs:
+- item_id: ebf3_positioning_bellows_folded_cover
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: sheet_metal_bending_and_forming_v0
+  inputs:
+  - item_id: steel_sheet_1mm
+    qty: 0.58025
+    unit: kg
+  outputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 0.5599
+    unit: kg
+  notes: Form the protective folded cover.
+- process_id: welded_fabrication_basic_v0
+  inputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 0.5599
+    unit: kg
+  outputs:
+  - item_id: ebf3_positioning_bellows_folded_cover
+    qty: 1.0
+    unit: unit
+  notes: Join the cover seam or end features.
+notes: First-pass local protective-cover route. This assumes a non-hermetic folded cover; flex life and
+  particle generation remain flagged.

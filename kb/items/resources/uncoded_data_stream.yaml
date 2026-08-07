@@ -1,0 +1,10 @@
+id: uncoded_data_stream
+name: Uncoded data stream
+kind: resource
+mass: 0.01
+unit: unit
+notes: Raw input data stream to error-correction coding v0.
+recipe: recipe_uncoded_data_stream_v0
+unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

@@ -1,0 +1,49 @@
+id: ebf3_wire_feed_encoder_target
+kind: assembly_part
+name: EBF3 wire feed encoder target
+mass: 0.08
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of ebf3_wire_feed_encoder_sensor. Encoder target for EBF3 wire feed encoder sensor.
+recipe: recipe_ebf3_wire_feed_encoder_target
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace validation-scaled generic stock inputs with explicit EBF material lower/upper bounds and material-specific
+  recipe inputs.
+- 'Encode or verify performance requirements outside prose notes: encoder target runout; index geometry;
+  stable mounting; sensor material compatibility.'
+- Split simple metal target from optical scale magnetic ring or encoded target.
+- If this is not a simple machined metal target, define the optical, magnetic, or encoded-target process
+  and readout compatibility checks before local closure.
+- Confirm the simple-metal-target architecture and verify geometry, runout, sensor contrast, and calibration;
+  optical scales or multipole magnetic rings require reclassification.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_wire_feed_encoder_target
+  source_recipe_path: kb/recipes/recipe_ebf3_wire_feed_encoder_target.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.08
+  availability_class: local_derived
+  primary_process_id: machining_basic_v0
+  executable_process_id: machining_basic_v0
+  secondary_process_ids:
+  - inspection_basic_v0
+  - alignment_and_testing_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - inspection_tools_basic
+  - measurement_equipment
+  - alignment_tools
+  - test_bench_electrical
+  confidence: medium
+  reasoning_brief: The first-pass architecture treats this as a simple metal index target, which CNC,
+    inspection, and calibration can close.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

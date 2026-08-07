@@ -1,9 +1,11 @@
 id: amplitude_modulation_circuit_v0
 name: Amplitude Modulation Circuit
-kind: part
+kind: assembly_part
 mass: 0.25
 unit: kg
-material_class: electronic
+material: electronic
 notes: Seed placeholder AM modulation circuit component referenced by seed paper_reviews_dec2024_comprehensive_v0.
 recipe: recipe_amplitude_modulation_circuit_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

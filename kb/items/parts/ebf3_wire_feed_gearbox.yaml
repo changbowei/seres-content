@@ -1,0 +1,30 @@
+id: ebf3_wire_feed_gearbox
+kind: assembly_part
+name: EBF3 wire feed gearbox
+mass: 0.7
+unit: unit
+unit_kind: discrete
+material: mixed_precision_gearbox_materials
+notes: Child of ebf3_wire_feed_gearmotor. Gearbox for EBF3 wire feed gearmotor.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_wire_feed_gearbox
+  source_recipe_path: kb/recipes/recipe_ebf3_wire_feed_gearbox.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: import_as_leaf
+  simulation_import_mass_policy: import_nominal
+  mass_nominal_kg: 0.7
+  availability_class: expand_but_flag
+  primary_process_id: import_receiving_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Coarse precision gearbox assembly hides gears, shafts, bearings, seals, and lubricant; split into child BOM only if gearbox import mass or drivetrain closure becomes important.
+  recommended_edit: Count as complex import in the first simulation; decompose only if this boundary dominates imported mass or functional closure.
+  confidence: medium
+route_decision: import_as_leaf
+simulation_import_mass_policy: import_nominal
+is_import: true

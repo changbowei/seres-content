@@ -1,9 +1,9 @@
 id: valve_solenoid
-kind: part
+kind: assembly_part
 name: Solenoid valve
 mass: 0.8
 unit: kg
-material_class: steel
+material: steel
 bom: bom_valve_solenoid_v0
 notes: 'Electronically actuated solenoid valve for gas flow control.
 
@@ -16,3 +16,5 @@ notes: 'Electronically actuated solenoid valve for gas flow control.
   '
 recipe: recipe_valve_solenoid_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

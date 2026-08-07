@@ -1,0 +1,13 @@
+id: ebf3_sectioned_hv_step_up_transformer
+kind: assembly_part
+name: EBF3 sectioned HV step-up transformer
+mass: 10.0
+unit: unit
+unit_kind: discrete
+material: composite
+notes: |
+  Source-first child split for the sectioned HV step-up transformer function inside the HV section module set. The child BOM is function-level only; section count, winding geometry, magnetic material, insulation design, voltage ratings, oil integration, and local manufacturing route remain unresolved. See research/ebf3_bom_sources/organized/split_before_route_leaf_decomposition_plan.md.
+bom: bom_ebf3_sectioned_hv_step_up_transformer
+recipe: recipe_ebf3_sectioned_hv_step_up_transformer_assembly_v0
+trust_tags:
+- trusted_ebf3_unreplaced

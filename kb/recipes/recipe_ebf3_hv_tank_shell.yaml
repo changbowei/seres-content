@@ -1,0 +1,45 @@
+id: recipe_ebf3_hv_tank_shell
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_hv_tank_shell
+inputs:
+- item_id: steel_sheet_3mm
+  qty: 8.4
+  unit: kg
+outputs:
+- item_id: ebf3_hv_tank_shell
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: sheet_metal_bending_and_forming_v0
+  inputs:
+  - item_id: steel_sheet_3mm
+    qty: 8.4
+    unit: kg
+  outputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 8.24
+    unit: kg
+  notes: Roll and form the tank shell.
+- process_id: welded_fabrication_basic_v0
+  inputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 8.24
+    unit: kg
+  outputs:
+  - item_id: welded_assemblies
+    qty: 8.24
+    unit: kg
+  notes: Join seams and required structural features.
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: welded_assemblies
+    qty: 8.24
+    unit: kg
+  outputs:
+  - item_id: ebf3_hv_tank_shell
+    qty: 1.0
+    unit: unit
+  notes: Machine interfaces and sealing surfaces.
+notes: First-pass local sheet-and-weld route. Distortion, stiffness, cleanliness, and leak acceptance
+  remain non-blocking verification gaps.

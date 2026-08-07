@@ -1,0 +1,27 @@
+id: recipe_ebf3_moveable_build_platform_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_moveable_build_platform
+inputs: &assembly_inputs
+- item_id: ebf3_moveable_build_platform_plate
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_moveable_build_platform_clamp_slot_set
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_moveable_build_platform_return_contact_pad
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_moveable_build_platform
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_moveable_build_platform
+    qty: 1.0
+    unit: unit
+  notes: Assemble the platform plate, clamp features, and return-current contact.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

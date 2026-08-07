@@ -1,0 +1,45 @@
+id: recipe_ebf3_cabin_access_door_panel
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_cabin_access_door_panel
+inputs:
+- item_id: steel_plate_or_sheet
+  qty: 13.65
+  unit: kg
+outputs:
+- item_id: ebf3_cabin_access_door_panel
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: sheet_metal_fabrication_v0
+  inputs:
+  - item_id: steel_plate_or_sheet
+    qty: 13.65
+    unit: kg
+  outputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 13.39
+    unit: kg
+  notes: Form the door panel.
+- process_id: welded_fabrication_basic_v0
+  inputs:
+  - item_id: formed_sheet_metal_parts
+    qty: 13.39
+    unit: kg
+  outputs:
+  - item_id: welded_assemblies
+    qty: 13.39
+    unit: kg
+  notes: Join seams and required structural features.
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: welded_assemblies
+    qty: 13.39
+    unit: kg
+  outputs:
+  - item_id: ebf3_cabin_access_door_panel
+    qty: 1.0
+    unit: unit
+  notes: Machine interfaces and sealing surfaces.
+notes: First-pass local sheet-and-weld route. Distortion, stiffness, cleanliness, and leak acceptance
+  remain non-blocking verification gaps.

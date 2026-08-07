@@ -1,0 +1,60 @@
+id: recipe_ebf3_cabin_frame_member_set
+kind: recipe
+variant_id: ebf3_route_review_v0
+target_item_id: ebf3_cabin_frame_member_set
+inputs:
+- item_id: steel_ingot
+  qty: 33.6
+  unit: kg
+outputs:
+- item_id: ebf3_cabin_frame_member_set
+  qty: 1.0
+  unit: unit
+byproducts:
+- item_id: slag
+  qty: 8.4
+  unit: kg
+- item_id: steel_scrap
+  qty: 1.2
+  unit: kg
+steps:
+- process_id: steel_bar_stock_rolling_shop_v0
+  inputs:
+  - item_id: steel_ingot
+    qty: 33.6
+    unit: kg
+  outputs:
+  - item_id: steel_bar_stock
+    qty: 25.2
+    unit: kg
+  byproducts:
+  - item_id: slag
+    qty: 8.4
+    unit: kg
+  notes: Roll steel ingot into frame-member stock.
+- process_id: cutting_basic_v0
+  inputs:
+  - item_id: steel_bar_stock
+    qty: 25.2
+    unit: kg
+  outputs:
+  - item_id: cut_parts
+    qty: 24.0
+    unit: kg
+  byproducts:
+  - item_id: steel_scrap
+    qty: 1.2
+    unit: kg
+  notes: Cut frame members to length.
+- process_id: machining_basic_v0
+  inputs:
+  - item_id: cut_parts
+    qty: 24.0
+    unit: kg
+  outputs:
+  - item_id: ebf3_cabin_frame_member_set
+    qty: 1.0
+    unit: unit
+  notes: Machine member ends, mounting holes, and joint interfaces.
+notes: First-pass local route now includes rolling, cutting, and CNC finishing instead of stopping at
+  bar stock.

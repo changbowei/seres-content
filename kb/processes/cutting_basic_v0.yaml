@@ -31,7 +31,8 @@ time_model:
   type: batch
   hr_per_batch: 0.5
 notes: Basic cutting operations to separate steel plate or sheet stock into smaller
-  pieces. Includes sawing, shearing, plasma cutting, or abrasive cutting. Produces
-  rough-cut parts for further machining or fabrication. Simple dimensional accuracy,
-  requires finishing for precision parts.
+  pieces using the listed saw, hand cutting tool, or mechanical shearing setup. The
+  labor bot provides stock handling and fixturing, not cutting capability. Produces
+  rough-cut parts for further machining or fabrication; precision geometry requires
+  a CNC finishing step.
 is_template: true

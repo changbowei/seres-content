@@ -1,0 +1,50 @@
+id: ebf3_power_input_cable_conductor_set
+kind: assembly_part
+name: EBF3 power input cable conductor set
+mass: 0.7
+unit: unit
+unit_kind: discrete
+material: aluminum
+notes: Child of ebf3_power_input_cable_gland. Power input conductor set for EBF3 power input cable and
+  gland.
+recipe: recipe_ebf3_power_input_cable_conductor_set
+trust_tags:
+- untrusted_global_kb
+future_improvements:
+- Replace coarse item specification with explicit material, geometry/interface requirements, and lower/upper
+  mass bounds.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: current capacity; flexibility/strain
+  relief; termination compatibility; vacuum/outgassing near gland; electrical safety.'
+- Define conductor drawing, insulation or bare-clearance policy, termination crimp/bond, electrical test,
+  and vacuum compatibility checks.
+- Verify cross-section, bend radius, termination resistance, current rise, and flex life; parent-level
+  insulation and connector qualification remain separate.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_power_input_cable_conductor_set
+  source_recipe_path: kb/recipes/recipe_ebf3_power_input_cable_conductor_set.yaml
+  source_queue_type: reachable_leaf_backfill_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 0.7
+  availability_class: local_derived
+  primary_process_id: wire_drawing_basic_v0
+  executable_process_id: wire_drawing_basic_v0
+  secondary_process_ids:
+  - power_cable_assembly_v0
+  - electrical_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - drawing_die_set_basic
+  - crimping_tool_set
+  - wire_stripper_set
+  - hand_tools_electrical
+  - test_bench_electrical
+  - multimeter_set
+  confidence: medium
+  reasoning_brief: Aluminum conductors can be drawn, grouped, terminated, and resistance-tested with conservative
+    cross-section; full cable qualification remains parent-level.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

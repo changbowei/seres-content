@@ -1,9 +1,11 @@
 id: ratchet_mechanism
-kind: part
+kind: assembly_part
 name: Ratchet mechanism
 mass: 0.8
 unit: kg
-material_class: steel
+material: steel
 notes: Ratcheting mechanism for crimping tool; coarse mass estimate.
 recipe: recipe_ratchet_mechanism_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

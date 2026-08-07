@@ -1,0 +1,52 @@
+id: ebf3_wire_feeder_feedthrough_insulator_body
+kind: monolithic_part
+name: EBF3 wire feeder feedthrough insulator body
+mass: 0.18
+unit: unit
+unit_kind: discrete
+material: ceramic
+notes: 'Child of ebf3_wire_feeder_feedthrough_connector. Ceramic or insulating body for the wire-feeder-specific
+  feedthrough insert. It isolates motor-power and signal pins through the chamber boundary while the cabin
+  owns only the passive port/flange opening. Ceramic grade, pin sealing, creepage/clearance, vacuum compatibility,
+  and first-pass manufacturing/import route is recorded in ebf3_route_review metadata; see research/ebf3_bom_sources/organized/wire_feeder_level_2_audit.md.
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: pin isolation; vacuum leak boundary;
+  creepage and clearance; metallized seal interface.'
+- Retain import until ceramic grade, dielectric and outgassing data, interface finish, thermal cycling,
+  and assembled feedthrough leak/HV acceptance are defined.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_wire_feeder_feedthrough_insulator_body
+  source_recipe_path: kb/recipes/recipe_ebf3_wire_feeder_feedthrough_insulator_body.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.18
+  availability_class: local_derived
+  primary_process_id: ceramic_forming_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  secondary_process_ids:
+  - ceramic_sintering_process_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - pressing_mold_set
+  - hydraulic_press
+  - kiln_ceramic
+  - inspection_tools_basic
+  - measurement_equipment
+  confidence: medium
+  reasoning_brief: Ceramic forming and sintering can make the body, but dielectric strength, creepage,
+    outgassing, thermal cycling, and hermetic-interface performance are not demonstrated.
+  blocked_machine_or_process_reason: Ceramic forming and sintering can make the body, but dielectric strength,
+    creepage, outgassing, thermal cycling, and hermetic-interface performance are not demonstrated.
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

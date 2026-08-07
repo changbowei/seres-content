@@ -1,10 +1,12 @@
 id: chemical_reactor_heated_body
 name: Chemical reactor heated body
-kind: part
+kind: monolithic_part
 mass: 1.0
 unit: kg
-material_class: metal
+material: metal
 notes: Placeholder heated body for chemical reactor; created to resolve gap entries
   referencing this item.
 recipe: recipe_chemical_reactor_heated_body_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

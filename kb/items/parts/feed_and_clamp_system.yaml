@@ -1,9 +1,11 @@
 id: feed_and_clamp_system
-kind: part
+kind: assembly_part
 name: Feed and clamp system
 mass: 40.0
 unit: kg
-material_class: steel
+material: steel
 notes: Workholding clamps and feed mechanism for positioning stock in shear or saw.
 recipe: recipe_feed_and_clamp_system_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

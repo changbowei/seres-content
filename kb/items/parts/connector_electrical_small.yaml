@@ -1,11 +1,13 @@
 id: connector_electrical_small
 is_import: true
-kind: part
+kind: assembly_part
 name: Electrical connector (small)
 mass: 0.02
 unit: kg
-material_class: composite
+material: composite
 notes: Small electrical connector for wiring connections. Includes connector body,
   terminals, and strain relief. Used in sensors, instruments, and small electrical
   assemblies.
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

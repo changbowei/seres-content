@@ -1,0 +1,59 @@
+id: ebf3_gun_deflection_magnetic_yoke
+kind: monolithic_part
+name: EBF3 gun deflection magnetic yoke
+mass: 0.4
+unit: unit
+unit_kind: discrete
+performance_requirements:
+  geometrical_tolerances:
+    location:
+    - symmetry
+  material_properties:
+    physical:
+    - magnetic_permeability
+    - coercivity
+    chemical:
+    - vacuum_outgassing
+material: electrical_steel_or_soft_iron
+notes: 'FG-8 child item adopted from research/ebf3_bom_sources/organized/magnetic_steering_decomposition_plan.md.
+  Kept as an unresolved yoke assembly or part candidate until magnetic material, segmentation, machining
+  constraints, vacuum compatibility, and field-response requirements are reviewed.
+
+  '
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- Retain import until magnetic material state and assembled deflection-field response can be measured
+  against gun requirements.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_gun_deflection_magnetic_yoke
+  source_recipe_path: kb/recipes/recipe_ebf3_gun_deflection_magnetic_yoke.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 0.4
+  availability_class: keep_ebf3_leaf
+  primary_process_id: machining_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Material shaping and annealing are physically plausible, but permeability, saturation,
+    hysteresis, residual field, and beam-deflection response are not demonstrated.
+  recommended_edit: Keep imported until this local process and acceptance gap is explicitly closed.
+  secondary_process_ids:
+  - annealing_basic_v0
+  - inspection_basic_v0
+  ready_machine_ids:
+  - multi_axis_cnc_machining_center
+  - labor_bot_general_v0
+  - heat_treatment_furnace_v0
+  - inspection_tools_basic
+  - measurement_equipment
+  blocked_machine_or_process_reason: Material shaping and annealing are physically plausible, but permeability,
+    saturation, hysteresis, residual field, and beam-deflection response are not demonstrated.
+  confidence: medium
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

@@ -1,0 +1,27 @@
+id: recipe_ebf3_linear_guide_carriages_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_linear_guide_carriages
+inputs: &assembly_inputs
+- item_id: ebf3_linear_guide_carriage_block_set
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_linear_guide_carriage_rolling_element_set
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_linear_guide_carriage_retainer_set
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_linear_guide_carriages
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_linear_guide_carriages
+    qty: 1.0
+    unit: unit
+  notes: Assemble carriage blocks, rolling elements, and retainers.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

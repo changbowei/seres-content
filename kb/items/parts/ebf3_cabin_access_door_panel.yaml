@@ -1,0 +1,49 @@
+id: ebf3_cabin_access_door_panel
+kind: monolithic_part
+name: EBF3 cabin access door panel
+mass: 13.0
+unit: unit
+unit_kind: discrete
+material: steel
+notes: Child of MC-3. Main door panel for service access to the manufacture cabin.
+recipe: recipe_ebf3_cabin_access_door_panel
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve panel material, stiffness, shielding role, and vacuum sealing details.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported
+  mass.
+- 'Encode or verify performance requirements outside prose notes: vacuum boundary stiffness; sealing face
+  flatness; leak rate; low outgassing finish.'
+- Verify panel stiffness, seal-face flatness, weld distortion, and assembled leak rate; conservative thickness
+  and rework are accepted in the first pass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_cabin_access_door_panel
+  source_recipe_path: kb/recipes/recipe_ebf3_cabin_access_door_panel.yaml
+  source_queue_type: process_route_review_kb_recipe
+  route_decision: lunar_candidate_flagged
+  simulation_import_mass_policy: sensitivity_flag
+  mass_nominal_kg: 13.0
+  availability_class: local_derived
+  primary_process_id: sheet_metal_fabrication_v0
+  executable_process_id: sheet_metal_fabrication_v0
+  secondary_process_ids:
+  - machining_basic_v0
+  - welded_fabrication_basic_v0
+  - leak_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - metal_shear_or_saw
+  - rolling_mill_v0
+  - drill_press
+  - multi_axis_cnc_machining_center
+  - welding_power_supply_v0
+  - welding_tools_set
+  - fixturing_workbench
+  - leak_test_equipment
+  confidence: medium
+  reasoning_brief: Sheet fabrication, edge/interface machining, joining, and leak testing can produce
+    the steel door panel; stiffness and distortion remain verification work.
+route_decision: lunar_candidate_flagged
+simulation_import_mass_policy: sensitivity_flag

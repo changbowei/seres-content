@@ -1,10 +1,12 @@
 id: track_assembly_crawler
-kind: part
+kind: assembly_part
 name: Track assembly (crawler)
 mass: 500.0
 unit: kg
-material_class: steel
+material: steel
 notes: Crawler track assembly including track links, rollers, idlers, and drive sprockets
   for tracked vehicles.
 recipe: recipe_track_assembly_crawler_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

@@ -1,0 +1,65 @@
+id: recipe_ebf3_3d_printer
+kind: recipe
+target_item_id: ebf3_3d_printer
+inputs:
+  - item_id: ebf3_controls
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_power_supplies
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_high_voltage_tank
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_fixed_electron_beam_gun
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_wire_feeder
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_four_axis_positioning_system
+    qty: 1.0
+    unit: unit
+  - item_id: ebf3_manufacture_cabin
+    qty: 1.0
+    unit: unit
+outputs:
+  - item_id: ebf3_3d_printer
+    qty: 1.0
+    unit: unit
+steps:
+  - process_id: assembly_basic_v0
+    inputs:
+      - item_id: ebf3_controls
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_power_supplies
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_high_voltage_tank
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_fixed_electron_beam_gun
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_wire_feeder
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_four_axis_positioning_system
+        qty: 1.0
+        unit: unit
+      - item_id: ebf3_manufacture_cabin
+        qty: 1.0
+        unit: unit
+    outputs:
+      - item_id: ebf3_3d_printer
+        qty: 1.0
+        unit: unit
+    notes: Assemble the EBF3 printer from the seven named subsystem assemblies.
+notes: >
+  Local fabrication path to produce ebf3_3d_printer from seven subsystem
+  assemblies. Detailed metal forming and chamber fabrication are now carried by
+  the manufacture cabin subsystem rather than the printer top-level recipe.
+assumptions: >
+  First-pass subsystem migration for EBF3 BOM refinement. Subsystem internals use
+  coarse bridge components until source-derived BOM details are ingested.

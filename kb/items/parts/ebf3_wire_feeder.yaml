@@ -1,0 +1,20 @@
+id: ebf3_wire_feeder
+kind: assembly_part
+name: EBF3 wire feeder subsystem
+mass: 14.43
+unit: unit
+unit_kind: discrete
+material: composite
+bom: bom_ebf3_wire_feeder
+recipe: recipe_ebf3_wire_feeder
+future_improvements:
+- Reconcile the 0.50 kg difference between the child BOM and assembly mass; do not
+  treat it as demonstrated assembly loss.
+notes: >
+  Wire feeder subsystem for EBF3 wire-fed electron beam additive manufacturing,
+  including feed drive, wire guidance, tensioning, and basic local wiring.
+  Level-2 wire-feeder items are aligned by
+  research/ebf3_bom_sources/organized/wire_feeder_level_2_audit.md. No
+  lower-level local closure is implied.
+trust_tags:
+- trusted_ebf3_unreplaced

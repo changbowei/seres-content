@@ -1,0 +1,27 @@
+id: recipe_ebf3_gun_hv_input_assembly_v0
+kind: recipe
+variant_id: assembly_v0
+target_item_id: ebf3_gun_hv_input
+inputs: &assembly_inputs
+- item_id: ebf3_gun_hv_input_central_conductor
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_hv_input_receiving_terminal
+  qty: 1.0
+  unit: unit
+- item_id: ebf3_gun_hv_input_flange_housing
+  qty: 1.0
+  unit: unit
+outputs:
+- item_id: ebf3_gun_hv_input
+  qty: 1.0
+  unit: unit
+steps:
+- process_id: assembly_basic_v0
+  inputs: *assembly_inputs
+  outputs:
+  - item_id: ebf3_gun_hv_input
+    qty: 1.0
+    unit: unit
+  notes: Assemble the conductor, receiving terminal, and flange housing.
+notes: Assembly-only route; child manufacturing and import policies remain authoritative.

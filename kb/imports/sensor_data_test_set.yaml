@@ -1,10 +1,10 @@
 id: sensor_data_test_set
 name: Sensor data test set
-kind: part
+kind: assembly_part
 unit: unit
 mass: 0.001
 mass_kg: 0.001
-material_class: data
+material: data
 is_import: true
 notes: 'Placeholder dataset of sensor data used for SLAM testing and simulation; massless.
 

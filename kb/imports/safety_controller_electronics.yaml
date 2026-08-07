@@ -1,10 +1,10 @@
 id: import_safety_controller_electronics
-kind: part
+kind: assembly_part
 is_import: true
 name: Safety controller electronics (imported)
 mass: 0.5
 unit: kg
-material_class: electronic
+material: electronic
 notes: Imported safety-rated controller electronics (SIL-rated). Local manufacturing
   requires certified components and validation infrastructure.
 unit_kind: bulk

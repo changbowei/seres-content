@@ -1,9 +1,11 @@
 id: mixer_drum_small
-kind: part
+kind: monolithic_part
 name: Mixer drum (small)
 mass: 57.0
 unit: unit
-material_class: steel
+material: steel
 notes: Drum for small cement mixer.
 recipe: recipe_mixer_drum_small_v0
 unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

@@ -1,0 +1,55 @@
+id: ebf3_cabin_wall_panel_seam_set
+kind: assembly_part
+name: EBF3 cabin wall panel seam set
+mass: 3.0
+unit: unit
+unit_kind: discrete
+performance_requirements:
+  geometrical_tolerances:
+    form:
+    - surface_profile
+  surface_integrity:
+    surface_defects:
+    - surface_crack
+  internal_integrity:
+    joining_defects:
+    - lack_of_fusion
+    - lack_of_penetration
+    - through_leak_path
+material: steel
+notes: Child of MC-2. Seams, weld lands, or seal interfaces between chamber wall panels.
+trust_tags:
+- trusted_ebf3_unreplaced
+future_improvements:
+- Resolve the actual sealing method and leak-test process.
+- Replace first-pass nominal import mass with sourced lower/upper mass bounds if this item dominates imported mass.
+ebf3_route_review:
+  variant_id: ebf3_route_review_v0
+  source_recipe_id: recipe_ebf3_cabin_wall_panel_seam_set
+  source_recipe_path: kb/recipes/recipe_ebf3_cabin_wall_panel_seam_set.yaml
+  source_queue_type: leaf_decomposition_review_kb_recipe
+  route_decision: route_gap
+  simulation_import_mass_policy: import_until_gap_resolved
+  import_reason: performance_not_verified
+  mass_nominal_kg: 3.0
+  availability_class: keep_ebf3_leaf
+  primary_process_id: welded_fabrication_basic_v0
+  executable_process_id: import_receiving_basic_v0
+  reasoning_brief: Seam/weld-land geometry is local-plausible steel work, but chamber seam leak rate, distortion control, and vacuum acceptance are not closed by the current fabrication route.
+  recommended_edit: Keep imported until this local process and acceptance gap is explicitly closed.
+  secondary_process_ids:
+  - sheet_metal_fabrication_v0
+  - leak_testing_v0
+  - vacuum_testing_v0
+  ready_machine_ids:
+  - labor_bot_general_v0
+  - welding_power_supply_v0
+  - welding_tools_set
+  - fixturing_workbench
+  - leak_test_equipment
+  - vacuum_pump_station
+  blocked_machine_or_process_reason: Need explicit chamber seam welding/fit-up route plus leak/vacuum acceptance before counting this mass as local.
+  confidence: medium
+route_decision: route_gap
+simulation_import_mass_policy: import_until_gap_resolved
+is_import: true

@@ -1,9 +1,11 @@
 id: hammer_drive_motor
-kind: part
+kind: assembly_part
 name: Hammer drive motor
 mass: 30.0
 unit: kg
-material_class: steel
+material: steel
 notes: Drive motor for power hammer; coarse mass estimate.
 recipe: recipe_hammer_drive_motor_v0
 unit_kind: bulk
+trust_tags:
+- untrusted_global_kb

@@ -1,10 +1,12 @@
 id: lamination_stack_clamped
 is_import: true
 name: Lamination stack (clamped)
-kind: part
+kind: monolithic_part
 mass: 1.0
 unit: unit
-material_class: metal
+material: metal
 notes: Placeholder clamped lamination stack.
 recipe: recipe_lamination_stack_clamped_import_v0
 unit_kind: discrete
+trust_tags:
+- untrusted_global_kb

@@ -22,7 +22,7 @@ byproducts:
     qty: 0.5
     unit: kg
 steps:
-  - process_id: sheet_metal_cutting_v0
+  - process_id: cutting_basic_v0
     inputs:
       - item_id: sheet_metal_or_structural_steel
         qty: 5.0
