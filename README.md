@@ -3,6 +3,13 @@
 This repository contains knowledge and published simulation data used by
 [SERES](https://github.com/aniemerg/seres).
 
+## Content Line
+
+This repository is `changbowei`'s independently maintained content line.
+Results from it should identify both the SERES commit and this repository's
+content commit; they should not be treated as data from another contributor's
+content line.
+
 It is normally checked out as the `content/` submodule inside a SERES checkout:
 
 ```text
