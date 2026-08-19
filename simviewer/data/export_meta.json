@@ -1,0 +1,18 @@
+{
+  "config": {
+    "sim_id": "runbook_queue_sequential",
+    "article_paths": [
+      "docs/simviewer_articles/**/*.md"
+    ],
+    "simulation_root": "simulations",
+    "checkpoint_every_processes": 150,
+    "checkpoint_every_hours": 24.0,
+    "homepage_article_id": "about_seres",
+    "strict": false
+  },
+  "paths": {
+    "simulation_dir": "simulations/runbook_queue_sequential",
+    "event_log": "simulations/runbook_queue_sequential/events.jsonl",
+    "snapshot": "simulations/runbook_queue_sequential/snapshot.json"
+  }
+}

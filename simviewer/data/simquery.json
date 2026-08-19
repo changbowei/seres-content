@@ -1,0 +1,2604 @@
+{
+  "version": "simquery.v0",
+  "scalars": {
+    "sim.id": "runbook_queue_sequential",
+    "sim.summary.time_hours": 353197.0,
+    "sim.summary.time_days": 14716.541666666666,
+    "sim.summary.total_energy_kwh": 1209372.1253980428,
+    "sim.summary.process_runs_total": 1641,
+    "sim.summary.process_runs_completed": 1641,
+    "sim.replication.seed_machine_types": 98,
+    "sim.replication.covered_machine_types": 46,
+    "sim.replication.coverage_ratio": 0.46938775510204084,
+    "sim.replication.coverage_percent": 46.93877551020408,
+    "sim.machines.avg_utilization_ratio": 0.009018979604271544,
+    "sim.machines.avg_utilization_percent": 0.9018979604271544
+  },
+  "tables": {
+    "sim.machines.seeded": [
+      {
+        "id": "anvil_or_die_set",
+        "name": "Anvil or die set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "assembly_station",
+        "name": "Assembly station",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "assembly_tools_basic",
+        "name": "Basic assembly tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "ball_mill_v0",
+        "name": "Ball mill v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "bearing_grinding_machine_v0",
+        "name": "Bearing Grinding Machine",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "blast_furnace_or_smelter",
+        "name": "Blast furnace or smelter",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "casting_furnace_v0",
+        "name": "Casting furnace v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "casting_mold_set",
+        "name": "Casting mold set",
+        "imported_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "cement_mixer_small",
+        "name": "Cement mixer (small)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "chemical_reactor_basic",
+        "name": "Basic chemical reactor",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "chemical_separation_equipment",
+        "name": "Chemical separation equipment",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "coating_station_v0",
+        "name": "Coating station v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "coil_winding_machine",
+        "name": "Coil winding machine",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "control_compute_module_imported",
+        "name": "Control compute module (imported)",
+        "imported_quantity": 15.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "controlled_atmosphere_chamber",
+        "name": "Controlled atmosphere chamber",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "coordinate_measuring_machine",
+        "name": "Coordinate measuring machine",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "crucible_graphite",
+        "name": "Graphite crucible",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "crucible_refractory",
+        "name": "Refractory crucible",
+        "imported_quantity": 4.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "cutting_tools_general",
+        "name": "General cutting tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "deburring_tools",
+        "name": "Deburring tools set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "dies",
+        "name": "Dies and tooling",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "drill_press",
+        "name": "Drill press",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "drilling_equipment_v0",
+        "name": "Drilling equipment (field/mining)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "dust_collection_system",
+        "name": "Dust collection system",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "electrodes",
+        "name": "Electrodes",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "electrolysis_cell_unit_v0",
+        "name": "Electrolysis cell module v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "fixturing_workbench",
+        "name": "Fixturing workbench",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "furnace_basic",
+        "name": "Basic furnace",
+        "imported_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "furnace_high_temp",
+        "name": "High temperature furnace",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "generic_chemical_reactor_v0",
+        "name": "Generic chemical reactor",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "glass_furnace_v0",
+        "name": "Glass furnace v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "grinder_cylindrical_v0",
+        "name": "Cylindrical Grinder",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "grinding_wheels",
+        "name": "Grinding wheels",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hand_tools_basic",
+        "name": "Hand tools (basic set)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hand_tools_electrical",
+        "name": "Electrical hand tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hand_tools_mechanical",
+        "name": "Mechanical hand tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "heat_treatment_furnace_v0",
+        "name": "Heat treatment furnace v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "heating_furnace",
+        "name": "Heating furnace (general purpose)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "heating_plate_induction_heater",
+        "name": "Heating plate induction heater",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "heliostat_array_system_v0",
+        "name": "HelioStat array system v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "high_temperature_power_supply_v0",
+        "name": "High-temperature power supply v0",
+        "imported_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hot_press_v0",
+        "name": "Hot press v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hydraulic_assembly_tools",
+        "name": "Hydraulic assembly tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hydraulic_power_unit_basic",
+        "name": "Hydraulic power unit (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "hydraulic_press",
+        "name": "Hydraulic press",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "induction_forge_v0",
+        "name": "Induction forge",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "inert_atmosphere_system",
+        "name": "Inert atmosphere system",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "inspection_tools_basic",
+        "name": "Inspection tools (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "kiln_ceramic",
+        "name": "Ceramic kiln",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "labor_bot_general_v0",
+        "name": "General labor bot (automation)",
+        "imported_quantity": 10.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "lathe_engine_v0",
+        "name": "Lathe engine v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "lifting_equipment",
+        "name": "Lifting Equipment (Hoist/Crane)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "magnetic_separator_drum_v0",
+        "name": "Magnetic separator drum v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "measurement_equipment",
+        "name": "Measurement equipment",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "metal_shear_or_saw",
+        "name": "Metal shear or saw",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "mixer_or_blender",
+        "name": "Mixer or blender",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "molding_press_basic",
+        "name": "Molding press (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "mre_reactor_v0",
+        "name": "MRE reactor v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "multi_axis_cnc_machining_center",
+        "name": "Multi-axis CNC machining center",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "plate_rolling_mill",
+        "name": "Plate rolling mill",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "powder_mixer",
+        "name": "Powder mixer",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "power_distribution_bus",
+        "name": "Power Distribution Bus",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "power_electronics_module",
+        "name": "Power Electronics Module",
+        "imported_quantity": 4.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "power_hammer_or_press",
+        "name": "Power hammer or press",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "precision_lathe",
+        "name": "Precision lathe",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "precision_levels",
+        "name": "Precision levels",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "precision_tooling_set",
+        "name": "Precision tooling set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "press_brake",
+        "name": "Press brake",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "press_brake_die_set",
+        "name": "Press brake die set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "press_ram_set",
+        "name": "Press ram set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "pressing_mold_set",
+        "name": "Pressing mold set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "pressure_test_rig_basic",
+        "name": "Pressure test rig (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "pyrolysis_chamber_v0",
+        "name": "Pyrolysis chamber v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "quench_tank",
+        "name": "Quench tank",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "reduction_furnace_v0",
+        "name": "Reduction furnace",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "refractory_installation_tools",
+        "name": "Refractory installation tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "rock_crusher_basic",
+        "name": "Rock crusher (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "rolling_mill_v0",
+        "name": "Rolling mill v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "sand_casting_flask_set",
+        "name": "Sand casting flask set",
+        "imported_quantity": 4.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "saw_or_cutting_tool",
+        "name": "Saw or cutting tool",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "screening_equipment",
+        "name": "Screening equipment",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "sintering_furnace_v0",
+        "name": "Sintering furnace v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "soldering_station",
+        "name": "Soldering station",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "stamping_press_basic",
+        "name": "Stamping press (basic)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "steel_forming_press",
+        "name": "Steel forming press",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "surface_grinder",
+        "name": "Surface grinder",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "surface_treatment_station",
+        "name": "Surface treatment station",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "tension_gauge",
+        "name": "Tension gauge",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "test_bench_electrical",
+        "name": "Electrical test bench",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "vacuum_pump_small",
+        "name": "Vacuum pump (small)",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "vibrating_screen_v0",
+        "name": "Vibrating screen v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "vibratory_feeder_v0",
+        "name": "Vibratory feeder v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "welding_consumables",
+        "name": "Welding Consumables and Filler Material Set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "welding_power_supply_v0",
+        "name": "Welding power supply v0",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "welding_tools_set",
+        "name": "Welding tools set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "winding_drums",
+        "name": "Winding drums set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "wire_crimping_tools",
+        "name": "Wire crimping tools",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      },
+      {
+        "id": "wire_drawing_die_set",
+        "name": "Wire drawing die set",
+        "imported_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 0.0
+      }
+    ],
+    "sim.machines.produced": [
+      {
+        "id": "alignment_tools",
+        "name": "Alignment tools",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 3.35013501350135
+      },
+      {
+        "id": "assembly_station",
+        "name": "Assembly station",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 157.0
+      },
+      {
+        "id": "assembly_tools_basic",
+        "name": "Basic assembly tools",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 3167.0
+      },
+      {
+        "id": "balancing_machine",
+        "name": "Dynamic balancing machine",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 3566.5
+      },
+      {
+        "id": "ball_mill_v0",
+        "name": "Ball mill v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 6296.0
+      },
+      {
+        "id": "blast_furnace_or_smelter",
+        "name": "Blast furnace or smelter",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 173675.0
+      },
+      {
+        "id": "casting_mold_set",
+        "name": "Casting mold set",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 179118.0
+      },
+      {
+        "id": "ceramic_press_or_mold_set",
+        "name": "Ceramic press or mold set",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 183052.15061506152
+      },
+      {
+        "id": "chemical_reactor_basic",
+        "name": "Basic chemical reactor",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 189705.0
+      },
+      {
+        "id": "control_compute_module_imported",
+        "name": "Control compute module (imported)",
+        "produced_quantity": 2.0,
+        "unit": "kg",
+        "first_seen_time_hours": 351228.0
+      },
+      {
+        "id": "crucible_refractory",
+        "name": "Refractory crucible",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 197430.0
+      },
+      {
+        "id": "drawing_die_set_basic",
+        "name": "Drawing die set (basic)",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 198152.99640188905
+      },
+      {
+        "id": "drying_oven",
+        "name": "Drying oven",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 205304.0
+      },
+      {
+        "id": "dust_collection_system",
+        "name": "Dust collection system",
+        "produced_quantity": 200.0,
+        "unit": "kg",
+        "first_seen_time_hours": 205498.00600060006
+      },
+      {
+        "id": "electrodes",
+        "name": "Electrodes",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 205801.0
+      },
+      {
+        "id": "electrolysis_cell_unit_v0",
+        "name": "Electrolysis cell module v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 206219.0
+      },
+      {
+        "id": "fixturing_workbench",
+        "name": "Fixturing workbench",
+        "produced_quantity": 450.0,
+        "unit": "kg",
+        "first_seen_time_hours": 214747.01350135013
+      },
+      {
+        "id": "forging_press_v0",
+        "name": "Forging press unit v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 216668.52550255024
+      },
+      {
+        "id": "furnace_basic",
+        "name": "Basic furnace",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 233129.2
+      },
+      {
+        "id": "furnace_high_temp",
+        "name": "High temperature furnace",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 238865.0
+      },
+      {
+        "id": "grinding_wheels",
+        "name": "Grinding wheels",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 242816.5
+      },
+      {
+        "id": "hand_tools_basic",
+        "name": "Hand tools (basic set)",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 198081.8400840084
+      },
+      {
+        "id": "heat_treatment_furnace_v0",
+        "name": "Heat treatment furnace v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 243316.0
+      },
+      {
+        "id": "heating_furnace",
+        "name": "Heating furnace (general purpose)",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 248337.2
+      },
+      {
+        "id": "high_temperature_power_supply_v0",
+        "name": "High-temperature power supply v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 248902.0
+      },
+      {
+        "id": "hydraulic_assembly_tools",
+        "name": "Hydraulic assembly tools",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 261643.900390039
+      },
+      {
+        "id": "labor_bot_general_v0",
+        "name": "General labor bot (automation)",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 267255.0
+      },
+      {
+        "id": "lathe_engine_v0",
+        "name": "Lathe engine v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 268257.0
+      },
+      {
+        "id": "metal_shear_or_saw",
+        "name": "Metal shear or saw",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 271755.801680168
+      },
+      {
+        "id": "mixer_or_blender",
+        "name": "Mixer or blender",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 275253.0
+      },
+      {
+        "id": "molding_press_basic",
+        "name": "Molding press (basic)",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 278896.0
+      },
+      {
+        "id": "mre_reactor_v0",
+        "name": "MRE reactor v0",
+        "produced_quantity": 1254.5,
+        "unit": "kg",
+        "first_seen_time_hours": 286939.0
+      },
+      {
+        "id": "multi_axis_cnc_machining_center",
+        "name": "Multi-axis CNC machining center",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 189725.0
+      },
+      {
+        "id": "plate_rolling_mill",
+        "name": "Plate rolling mill",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 302429.5
+      },
+      {
+        "id": "powder_mixer",
+        "name": "Powder mixer",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 304384.0
+      },
+      {
+        "id": "precision_levels",
+        "name": "Precision levels",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 312952.0
+      },
+      {
+        "id": "press_brake",
+        "name": "Press brake",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 327627.0
+      },
+      {
+        "id": "pyrolysis_chamber_v0",
+        "name": "Pyrolysis chamber v0",
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "first_seen_time_hours": 327639.0
+      },
+      {
+        "id": "quench_tank",
+        "name": "Quench tank",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 328425.00600060006
+      },
+      {
+        "id": "reduction_furnace_v0",
+        "name": "Reduction furnace",
+        "produced_quantity": 1019.5,
+        "unit": "kg",
+        "first_seen_time_hours": 328865.0
+      },
+      {
+        "id": "refractory_installation_tools",
+        "name": "Refractory installation tools",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 328944.0
+      },
+      {
+        "id": "rock_crusher_basic",
+        "name": "Rock crusher (basic)",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 337220.1295445887
+      },
+      {
+        "id": "sand_casting_flask_set",
+        "name": "Sand casting flask set",
+        "produced_quantity": 9.0,
+        "unit": "unit",
+        "first_seen_time_hours": 179115.0
+      },
+      {
+        "id": "saw_or_cutting_tool",
+        "name": "Saw or cutting tool",
+        "produced_quantity": 3.0,
+        "unit": "unit",
+        "first_seen_time_hours": 198086.4800480048
+      },
+      {
+        "id": "screening_equipment",
+        "name": "Screening equipment",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 341294.59328134375
+      },
+      {
+        "id": "surface_grinder",
+        "name": "Surface grinder",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 343428.0
+      },
+      {
+        "id": "test_bench_electrical",
+        "name": "Electrical test bench",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 351118.0
+      },
+      {
+        "id": "vibrating_screen_v0",
+        "name": "Vibrating screen v0",
+        "produced_quantity": 180.0,
+        "unit": "kg",
+        "first_seen_time_hours": 351230.0
+      },
+      {
+        "id": "welding_consumables",
+        "name": "Welding Consumables and Filler Material Set",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 351640.0
+      },
+      {
+        "id": "welding_power_supply_v0",
+        "name": "Welding power supply v0",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 352313.0
+      },
+      {
+        "id": "welding_tools_set",
+        "name": "Welding tools set",
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "first_seen_time_hours": 353161.0
+      },
+      {
+        "id": "wire_crimping_tools",
+        "name": "Wire crimping tools",
+        "produced_quantity": 10.0,
+        "unit": "kg",
+        "first_seen_time_hours": 353177.65016501653
+      }
+    ],
+    "sim.machines.coverage": [
+      {
+        "id": "anvil_or_die_set",
+        "name": "Anvil or die set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "assembly_station",
+        "name": "Assembly station",
+        "imported_quantity": 1.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "assembly_tools_basic",
+        "name": "Basic assembly tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "ball_mill_v0",
+        "name": "Ball mill v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "bearing_grinding_machine_v0",
+        "name": "Bearing Grinding Machine",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "blast_furnace_or_smelter",
+        "name": "Blast furnace or smelter",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "casting_furnace_v0",
+        "name": "Casting furnace v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "casting_mold_set",
+        "name": "Casting mold set",
+        "imported_quantity": 2.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "cement_mixer_small",
+        "name": "Cement mixer (small)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "chemical_reactor_basic",
+        "name": "Basic chemical reactor",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "chemical_separation_equipment",
+        "name": "Chemical separation equipment",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "coating_station_v0",
+        "name": "Coating station v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "coil_winding_machine",
+        "name": "Coil winding machine",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "control_compute_module_imported",
+        "name": "Control compute module (imported)",
+        "imported_quantity": 15.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "controlled_atmosphere_chamber",
+        "name": "Controlled atmosphere chamber",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "coordinate_measuring_machine",
+        "name": "Coordinate measuring machine",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "crucible_graphite",
+        "name": "Graphite crucible",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "crucible_refractory",
+        "name": "Refractory crucible",
+        "imported_quantity": 4.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "cutting_tools_general",
+        "name": "General cutting tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "deburring_tools",
+        "name": "Deburring tools set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "dies",
+        "name": "Dies and tooling",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "drill_press",
+        "name": "Drill press",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "drilling_equipment_v0",
+        "name": "Drilling equipment (field/mining)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "dust_collection_system",
+        "name": "Dust collection system",
+        "imported_quantity": 1.0,
+        "produced_quantity": 200.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "electrodes",
+        "name": "Electrodes",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "electrolysis_cell_unit_v0",
+        "name": "Electrolysis cell module v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "fixturing_workbench",
+        "name": "Fixturing workbench",
+        "imported_quantity": 1.0,
+        "produced_quantity": 450.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "furnace_basic",
+        "name": "Basic furnace",
+        "imported_quantity": 2.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "furnace_high_temp",
+        "name": "High temperature furnace",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "generic_chemical_reactor_v0",
+        "name": "Generic chemical reactor",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "glass_furnace_v0",
+        "name": "Glass furnace v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "grinder_cylindrical_v0",
+        "name": "Cylindrical Grinder",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "grinding_wheels",
+        "name": "Grinding wheels",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "hand_tools_basic",
+        "name": "Hand tools (basic set)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "hand_tools_electrical",
+        "name": "Electrical hand tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "hand_tools_mechanical",
+        "name": "Mechanical hand tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "heat_treatment_furnace_v0",
+        "name": "Heat treatment furnace v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "heating_furnace",
+        "name": "Heating furnace (general purpose)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "heating_plate_induction_heater",
+        "name": "Heating plate induction heater",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "heliostat_array_system_v0",
+        "name": "HelioStat array system v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "high_temperature_power_supply_v0",
+        "name": "High-temperature power supply v0",
+        "imported_quantity": 2.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "hot_press_v0",
+        "name": "Hot press v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "hydraulic_assembly_tools",
+        "name": "Hydraulic assembly tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "hydraulic_power_unit_basic",
+        "name": "Hydraulic power unit (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "hydraulic_press",
+        "name": "Hydraulic press",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "induction_forge_v0",
+        "name": "Induction forge",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "inert_atmosphere_system",
+        "name": "Inert atmosphere system",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "inspection_tools_basic",
+        "name": "Inspection tools (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "kiln_ceramic",
+        "name": "Ceramic kiln",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "labor_bot_general_v0",
+        "name": "General labor bot (automation)",
+        "imported_quantity": 10.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "lathe_engine_v0",
+        "name": "Lathe engine v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "lifting_equipment",
+        "name": "Lifting Equipment (Hoist/Crane)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "magnetic_separator_drum_v0",
+        "name": "Magnetic separator drum v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "measurement_equipment",
+        "name": "Measurement equipment",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "metal_shear_or_saw",
+        "name": "Metal shear or saw",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "mixer_or_blender",
+        "name": "Mixer or blender",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "molding_press_basic",
+        "name": "Molding press (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "mre_reactor_v0",
+        "name": "MRE reactor v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1254.5,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "multi_axis_cnc_machining_center",
+        "name": "Multi-axis CNC machining center",
+        "imported_quantity": 1.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "plate_rolling_mill",
+        "name": "Plate rolling mill",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "powder_mixer",
+        "name": "Powder mixer",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "power_distribution_bus",
+        "name": "Power Distribution Bus",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "power_electronics_module",
+        "name": "Power Electronics Module",
+        "imported_quantity": 4.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "power_hammer_or_press",
+        "name": "Power hammer or press",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "precision_lathe",
+        "name": "Precision lathe",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "precision_levels",
+        "name": "Precision levels",
+        "imported_quantity": 1.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "precision_tooling_set",
+        "name": "Precision tooling set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "press_brake",
+        "name": "Press brake",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "press_brake_die_set",
+        "name": "Press brake die set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "press_ram_set",
+        "name": "Press ram set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "pressing_mold_set",
+        "name": "Pressing mold set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "pressure_test_rig_basic",
+        "name": "Pressure test rig (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "pyrolysis_chamber_v0",
+        "name": "Pyrolysis chamber v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 2.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "quench_tank",
+        "name": "Quench tank",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "reduction_furnace_v0",
+        "name": "Reduction furnace",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1019.5,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "refractory_installation_tools",
+        "name": "Refractory installation tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "rock_crusher_basic",
+        "name": "Rock crusher (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "rolling_mill_v0",
+        "name": "Rolling mill v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "sand_casting_flask_set",
+        "name": "Sand casting flask set",
+        "imported_quantity": 4.0,
+        "produced_quantity": 9.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "saw_or_cutting_tool",
+        "name": "Saw or cutting tool",
+        "imported_quantity": 1.0,
+        "produced_quantity": 3.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "screening_equipment",
+        "name": "Screening equipment",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "sintering_furnace_v0",
+        "name": "Sintering furnace v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "soldering_station",
+        "name": "Soldering station",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "stamping_press_basic",
+        "name": "Stamping press (basic)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "steel_forming_press",
+        "name": "Steel forming press",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "surface_grinder",
+        "name": "Surface grinder",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "surface_treatment_station",
+        "name": "Surface treatment station",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "tension_gauge",
+        "name": "Tension gauge",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "test_bench_electrical",
+        "name": "Electrical test bench",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "vacuum_pump_small",
+        "name": "Vacuum pump (small)",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "vibrating_screen_v0",
+        "name": "Vibrating screen v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 180.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "vibratory_feeder_v0",
+        "name": "Vibratory feeder v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "welding_consumables",
+        "name": "Welding Consumables and Filler Material Set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "welding_power_supply_v0",
+        "name": "Welding power supply v0",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "welding_tools_set",
+        "name": "Welding tools set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 1.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "winding_drums",
+        "name": "Winding drums set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      },
+      {
+        "id": "wire_crimping_tools",
+        "name": "Wire crimping tools",
+        "imported_quantity": 1.0,
+        "produced_quantity": 10.0,
+        "unit": "unit",
+        "covered": true
+      },
+      {
+        "id": "wire_drawing_die_set",
+        "name": "Wire drawing die set",
+        "imported_quantity": 1.0,
+        "produced_quantity": 0.0,
+        "unit": "unit",
+        "covered": false
+      }
+    ],
+    "sim.machines.utilization": [
+      {
+        "id": "labor_bot_general_v0",
+        "name": "General labor bot (automation)",
+        "run_count": 407,
+        "busy_hours": 96312.93997545906,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.27268900918031314,
+        "utilization_percent": 27.268900918031314,
+        "total_energy_kwh": 232376.34000000003
+      },
+      {
+        "id": "blast_furnace_or_smelter",
+        "name": "Blast furnace or smelter",
+        "run_count": 60,
+        "busy_hours": 50310.79999999999,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.1424440184939283,
+        "utilization_percent": 14.24440184939283,
+        "total_energy_kwh": 101109.20000000001
+      },
+      {
+        "id": "high_temperature_power_supply_v0",
+        "name": "High-temperature power supply v0",
+        "run_count": 63,
+        "busy_hours": 23431.600000000006,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.06634144684128122,
+        "utilization_percent": 6.634144684128122,
+        "total_energy_kwh": 17573.7
+      },
+      {
+        "id": "mre_reactor_v0",
+        "name": "MRE reactor v0",
+        "run_count": 61,
+        "busy_hours": 11498.100000000006,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.03255435351942402,
+        "utilization_percent": 3.2554353519424017,
+        "total_energy_kwh": 701626.0
+      },
+      {
+        "id": "casting_furnace_v0",
+        "name": "Casting furnace v0",
+        "run_count": 38,
+        "busy_hours": 10251.799999999988,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.029025727851595535,
+        "utilization_percent": 2.9025727851595535,
+        "total_energy_kwh": 40847.2
+      },
+      {
+        "id": "milling_machine_general_v0",
+        "name": "milling_machine_general_v0",
+        "run_count": 170,
+        "busy_hours": 2231.97959795973,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.006319361710206288,
+        "utilization_percent": 0.6319361710206288,
+        "total_energy_kwh": 23531.214999999993
+      },
+      {
+        "id": "heat_treatment_furnace_v0",
+        "name": "Heat treatment furnace v0",
+        "run_count": 33,
+        "busy_hours": 1051.5167316340899,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.002977139476366135,
+        "utilization_percent": 0.2977139476366135,
+        "total_energy_kwh": 2052.95
+      },
+      {
+        "id": "crucible_refractory",
+        "name": "Refractory crucible",
+        "run_count": 117,
+        "busy_hours": 1017.7452631578781,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0028815229550587297,
+        "utilization_percent": 0.28815229550587296,
+        "total_energy_kwh": 38407.08421052632
+      },
+      {
+        "id": "induction_forge_v0",
+        "name": "Induction forge",
+        "run_count": 13,
+        "busy_hours": 733.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0020753290656489154,
+        "utilization_percent": 0.20753290656489154,
+        "total_energy_kwh": 664.64
+      },
+      {
+        "id": "inspection_tools_basic",
+        "name": "Inspection tools (basic)",
+        "run_count": 1,
+        "busy_hours": 600.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00169876867583813,
+        "utilization_percent": 0.169876867583813,
+        "total_energy_kwh": 0.05
+      },
+      {
+        "id": "chemical_reactor_basic",
+        "name": "Basic chemical reactor",
+        "run_count": 10,
+        "busy_hours": 546.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0015458794950126984,
+        "utilization_percent": 0.15458794950126983,
+        "total_energy_kwh": 1969.0
+      },
+      {
+        "id": "electrolysis_cell_unit_v0",
+        "name": "Electrolysis cell module v0",
+        "run_count": 4,
+        "busy_hours": 536.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0015175666837487294,
+        "utilization_percent": 0.15175666837487295,
+        "total_energy_kwh": 1005.0
+      },
+      {
+        "id": "ball_mill_v0",
+        "name": "Ball mill v0",
+        "run_count": 3,
+        "busy_hours": 376.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0010645617035252282,
+        "utilization_percent": 0.10645617035252282,
+        "total_energy_kwh": 191.76
+      },
+      {
+        "id": "cutting_tools_general",
+        "name": "General cutting tools",
+        "run_count": 24,
+        "busy_hours": 366.375,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0010373106226836582,
+        "utilization_percent": 0.10373106226836581,
+        "total_energy_kwh": 1318.9500000000003
+      },
+      {
+        "id": "assembly_tools_basic",
+        "name": "Basic assembly tools",
+        "run_count": 183,
+        "busy_hours": 193.20000000001164,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0005470035136199108,
+        "utilization_percent": 0.054700351361991084,
+        "total_energy_kwh": 11.299999999999997
+      },
+      {
+        "id": "furnace_high_temp",
+        "name": "High temperature furnace",
+        "run_count": 10,
+        "busy_hours": 169.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0004784865103610733,
+        "utilization_percent": 0.04784865103610733,
+        "total_energy_kwh": 113.03999999999999
+      },
+      {
+        "id": "drawing_die_set_basic",
+        "name": "Drawing die set (basic)",
+        "run_count": 7,
+        "busy_hours": 165.4918254087388,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00046855388185273035,
+        "utilization_percent": 0.04685538818527304,
+        "total_energy_kwh": 193.5
+      },
+      {
+        "id": "hot_press_v0",
+        "name": "Hot press v0",
+        "run_count": 6,
+        "busy_hours": 120.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.000339753735167626,
+        "utilization_percent": 0.0339753735167626,
+        "total_energy_kwh": 940.0
+      },
+      {
+        "id": "generic_chemical_reactor_v0",
+        "name": "Generic chemical reactor",
+        "run_count": 8,
+        "busy_hours": 86.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00024349017687013197,
+        "utilization_percent": 0.024349017687013197,
+        "total_energy_kwh": 176.0
+      },
+      {
+        "id": "hydraulic_press",
+        "name": "Hydraulic press",
+        "run_count": 13,
+        "busy_hours": 76.26000000000931,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00021591349869905268,
+        "utilization_percent": 0.02159134986990527,
+        "total_energy_kwh": 444.66315789473686
+      },
+      {
+        "id": "vibrating_screen_v0",
+        "name": "Vibrating screen v0",
+        "run_count": 67,
+        "busy_hours": 65.09999999997672,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00018431640132837119,
+        "utilization_percent": 0.01843164013283712,
+        "total_energy_kwh": 9252.5
+      },
+      {
+        "id": "rock_crusher_basic",
+        "name": "Rock crusher (basic)",
+        "run_count": 66,
+        "busy_hours": 64.20000000001164,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00018176824831471288,
+        "utilization_percent": 0.01817682483147129,
+        "total_energy_kwh": 22324.199999999993
+      },
+      {
+        "id": "furnace_basic",
+        "name": "Basic furnace",
+        "run_count": 22,
+        "busy_hours": 58.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00016421430533101924,
+        "utilization_percent": 0.016421430533101924,
+        "total_energy_kwh": 371.3
+      },
+      {
+        "id": "welding_power_supply_v0",
+        "name": "Welding power supply v0",
+        "run_count": 51,
+        "busy_hours": 50.39999999999418,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00014269656877038644,
+        "utilization_percent": 0.014269656877038643,
+        "total_energy_kwh": 9780.0
+      },
+      {
+        "id": "surface_grinder",
+        "name": "Surface grinder",
+        "run_count": 36,
+        "busy_hours": 45.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00012740765068785975,
+        "utilization_percent": 0.012740765068785975,
+        "total_energy_kwh": 544.0947368421054
+      },
+      {
+        "id": "test_bench_electrical",
+        "name": "Electrical test bench",
+        "run_count": 4,
+        "busy_hours": 36.593281343753915,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.00010360586682150164,
+        "utilization_percent": 0.010360586682150164,
+        "total_energy_kwh": 8.4
+      },
+      {
+        "id": "power_distribution_bus",
+        "name": "Power Distribution Bus",
+        "run_count": 1,
+        "busy_hours": 36.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 0.0001019261205502878,
+        "utilization_percent": 0.01019261205502878,
+        "total_energy_kwh": 360.0
+      },
+      {
+        "id": "rolling_mill_v0",
+        "name": "Rolling mill v0",
+        "run_count": 35,
+        "busy_hours": 35.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 9.909483942389092e-05,
+        "utilization_percent": 0.009909483942389092,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "mixer_or_blender",
+        "name": "Mixer or blender",
+        "run_count": 2,
+        "busy_hours": 25.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 7.219766872312053e-05,
+        "utilization_percent": 0.007219766872312052,
+        "total_energy_kwh": 10.5
+      },
+      {
+        "id": "heating_furnace",
+        "name": "Heating furnace (general purpose)",
+        "run_count": 1,
+        "busy_hours": 24.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 6.795074703352519e-05,
+        "utilization_percent": 0.006795074703352519,
+        "total_energy_kwh": 32.0
+      },
+      {
+        "id": "saw_or_cutting_tool",
+        "name": "Saw or cutting tool",
+        "run_count": 13,
+        "busy_hours": 18.56999999997788,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.25768905171275e-05,
+        "utilization_percent": 0.00525768905171275,
+        "total_energy_kwh": 123.80789473684212
+      },
+      {
+        "id": "pyrolysis_chamber_v0",
+        "name": "Pyrolysis chamber v0",
+        "run_count": 1,
+        "busy_hours": 16.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 4.671613858554857e-05,
+        "utilization_percent": 0.004671613858554857,
+        "total_energy_kwh": 44.0
+      },
+      {
+        "id": "plate_rolling_mill",
+        "name": "Plate rolling mill",
+        "run_count": 16,
+        "busy_hours": 16.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 4.5300498022350135e-05,
+        "utilization_percent": 0.004530049802235013,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "sintering_furnace_v0",
+        "name": "Sintering furnace v0",
+        "run_count": 2,
+        "busy_hours": 16.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 4.5300498022350135e-05,
+        "utilization_percent": 0.004530049802235013,
+        "total_energy_kwh": 100.0
+      },
+      {
+        "id": "metal_shear_or_saw",
+        "name": "Metal shear or saw",
+        "run_count": 10,
+        "busy_hours": 10.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968834e-05,
+        "utilization_percent": 0.0028312811263968836,
+        "total_energy_kwh": 1110.75
+      },
+      {
+        "id": "wire_drawing_die_set",
+        "name": "Wire drawing die set",
+        "run_count": 9,
+        "busy_hours": 9.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.548153013757195e-05,
+        "utilization_percent": 0.002548153013757195,
+        "total_energy_kwh": 249.0
+      },
+      {
+        "id": "precision_lathe",
+        "name": "Precision lathe",
+        "run_count": 7,
+        "busy_hours": 8.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.406588957437351e-05,
+        "utilization_percent": 0.002406588957437351,
+        "total_energy_kwh": 1.24
+      },
+      {
+        "id": "coil_winding_machine",
+        "name": "Coil winding machine",
+        "run_count": 8,
+        "busy_hours": 8.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.2650249011175068e-05,
+        "utilization_percent": 0.0022650249011175066,
+        "total_energy_kwh": 39.405
+      },
+      {
+        "id": "kiln_ceramic",
+        "name": "Ceramic kiln",
+        "run_count": 2,
+        "busy_hours": 8.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.2650249011175068e-05,
+        "utilization_percent": 0.0022650249011175066,
+        "total_energy_kwh": 7.0
+      },
+      {
+        "id": "multi_axis_cnc_machining_center",
+        "name": "Multi-axis CNC machining center",
+        "run_count": 7,
+        "busy_hours": 7.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.9818967884778183e-05,
+        "utilization_percent": 0.001981896788477818,
+        "total_energy_kwh": 1.0
+      },
+      {
+        "id": "forging_press_v0",
+        "name": "Forging press unit v0",
+        "run_count": 3,
+        "busy_hours": 6.75,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.911114760317896e-05,
+        "utilization_percent": 0.001911114760317896,
+        "total_energy_kwh": 3.2
+      },
+      {
+        "id": "press_brake",
+        "name": "Press brake",
+        "run_count": 6,
+        "busy_hours": 5.30030030029593,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.50066402044636e-05,
+        "utilization_percent": 0.00150066402044636,
+        "total_energy_kwh": 350.07157894736844
+      },
+      {
+        "id": "soldering_station",
+        "name": "Soldering station",
+        "run_count": 5,
+        "busy_hours": 5.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.4156405631984417e-05,
+        "utilization_percent": 0.0014156405631984418,
+        "total_energy_kwh": 0.4
+      },
+      {
+        "id": "casting_mold_set",
+        "name": "Casting mold set",
+        "run_count": 8,
+        "busy_hours": 4.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.2740765068785975e-05,
+        "utilization_percent": 0.0012740765068785975,
+        "total_energy_kwh": 2.4
+      },
+      {
+        "id": "grinder_cylindrical_v0",
+        "name": "Cylindrical Grinder",
+        "run_count": 1,
+        "busy_hours": 4.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.2740765068785975e-05,
+        "utilization_percent": 0.0012740765068785975,
+        "total_energy_kwh": 12.0
+      },
+      {
+        "id": "stamping_press_basic",
+        "name": "Stamping press (basic)",
+        "run_count": 3,
+        "busy_hours": 3.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 8.493843379190649e-06,
+        "utilization_percent": 0.0008493843379190649,
+        "total_energy_kwh": 34.8
+      },
+      {
+        "id": "screening_equipment",
+        "name": "Screening equipment",
+        "run_count": 3,
+        "busy_hours": 3.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 8.493843379190649e-06,
+        "utilization_percent": 0.0008493843379190649,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "balancing_machine",
+        "name": "Dynamic balancing machine",
+        "run_count": 3,
+        "busy_hours": 3.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 8.493843379190649e-06,
+        "utilization_percent": 0.0008493843379190649,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "assembly_station",
+        "name": "Assembly station",
+        "run_count": 1,
+        "busy_hours": 3.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 8.493843379190649e-06,
+        "utilization_percent": 0.0008493843379190649,
+        "total_energy_kwh": 3.0
+      },
+      {
+        "id": "measurement_equipment",
+        "name": "Measurement equipment",
+        "run_count": 2,
+        "busy_hours": 2.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.662562252793767e-06,
+        "utilization_percent": 0.0005662562252793766,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "powder_mixer",
+        "name": "Powder mixer",
+        "run_count": 2,
+        "busy_hours": 2.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.662562252793767e-06,
+        "utilization_percent": 0.0005662562252793766,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "ceramic_press_or_mold_set",
+        "name": "Ceramic press or mold set",
+        "run_count": 2,
+        "busy_hours": 2.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.662562252793767e-06,
+        "utilization_percent": 0.0005662562252793766,
+        "total_energy_kwh": 2.7
+      },
+      {
+        "id": "refractory_installation_tools",
+        "name": "Refractory installation tools",
+        "run_count": 1,
+        "busy_hours": 2.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.662562252793767e-06,
+        "utilization_percent": 0.0005662562252793766,
+        "total_energy_kwh": 0.1
+      },
+      {
+        "id": "pressing_mold_set",
+        "name": "Pressing mold set",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 9.6
+      },
+      {
+        "id": "steel_forming_press",
+        "name": "Steel forming press",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 20.0
+      },
+      {
+        "id": "molding_press_basic",
+        "name": "Molding press (basic)",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "hand_tools_mechanical",
+        "name": "Mechanical hand tools",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 1.0
+      },
+      {
+        "id": "alignment_tools",
+        "name": "Alignment tools",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "surface_treatment_station",
+        "name": "Surface treatment station",
+        "run_count": 1,
+        "busy_hours": 1.0,
+        "window_hours": 353197.0,
+        "utilization_ratio": 2.8312811263968835e-06,
+        "utilization_percent": 0.0002831281126396883,
+        "total_energy_kwh": 0.0
+      },
+      {
+        "id": "glass_furnace_v0",
+        "name": "Glass furnace v0",
+        "run_count": 1,
+        "busy_hours": 0.6000000000058208,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.6987686758546102e-06,
+        "utilization_percent": 0.00016987686758546103,
+        "total_energy_kwh": 9.0
+      },
+      {
+        "id": "pressure_test_rig_basic",
+        "name": "Pressure test rig (basic)",
+        "run_count": 1,
+        "busy_hours": 0.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.4156405631984417e-06,
+        "utilization_percent": 0.00014156405631984416,
+        "total_energy_kwh": 0.1
+      },
+      {
+        "id": "drill_press",
+        "name": "Drill press",
+        "run_count": 1,
+        "busy_hours": 0.5,
+        "window_hours": 353197.0,
+        "utilization_ratio": 1.4156405631984417e-06,
+        "utilization_percent": 0.00014156405631984416,
+        "total_energy_kwh": 12.763819095477386
+      },
+      {
+        "id": "winding_drums",
+        "name": "Winding drums set",
+        "run_count": 1,
+        "busy_hours": 0.20000000001164153,
+        "window_hours": 353197.0,
+        "utilization_ratio": 5.662562253123372e-07,
+        "utilization_percent": 5.662562253123372e-05,
+        "total_energy_kwh": 0.2
+      }
+    ],
+    "sim.annotations": [
+      {
+        "sim_time_hours": 0.0,
+        "key": "scenario.id",
+        "value": "runbook_queue_sequential",
+        "tags": [
+          "scenario",
+          "queue"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 0.0,
+        "key": "scenario.goal",
+        "value": "reproduce_seed_machine_set",
+        "tags": [
+          "scenario",
+          "self_replication"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 353197.0,
+        "key": "scenario.status",
+        "value": "complete",
+        "tags": [
+          "scenario",
+          "status"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      }
+    ],
+    "sim.markers": [
+      {
+        "sim_time_hours": 0.0,
+        "name": "queue_start",
+        "tags": [
+          "milestone",
+          "queue",
+          "phase"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 3576.0,
+        "name": "materials_chain_bootstrap",
+        "tags": [
+          "phase",
+          "materials",
+          "isru"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 198154.0,
+        "name": "fabrication_precision_phase",
+        "tags": [
+          "phase",
+          "fabrication",
+          "tooling"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 264666.0,
+        "name": "automation_labor_bootstrap",
+        "tags": [
+          "phase",
+          "automation"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 304399.0,
+        "name": "power_distribution_integration",
+        "tags": [
+          "phase",
+          "power",
+          "integration"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 345417.0,
+        "name": "validation_and_test_phase",
+        "tags": [
+          "phase",
+          "validation",
+          "test"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      },
+      {
+        "sim_time_hours": 353197.0,
+        "name": "queue_complete",
+        "tags": [
+          "milestone",
+          "queue",
+          "complete"
+        ],
+        "source": "runbook",
+        "metadata": {}
+      }
+    ]
+  }
+}

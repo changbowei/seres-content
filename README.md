@@ -34,3 +34,15 @@ content.
 The canonical schema and simulation engine live in SERES. Compatibility is
 identified by the pair of commit hashes recorded by the SERES checkout and by
 each simulation's `provenance.json`.
+
+## Published SimViewer
+
+This content repository also publishes a static SimViewer build for review:
+
+```text
+https://changbowei.github.io/seres-content/
+```
+
+The site root redirects to `simviewer/`. The static viewer is built from the
+SERES `apps/simviewer` Vite app and uses the committed data files copied into
+the build artifact at publication time.
